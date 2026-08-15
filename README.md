@@ -1,4 +1,4 @@
-# Staff · grok-bot-task-org
+# Staff
 
 A public personal board: an interactive org chart of door names and seats. Click a name for role, story (with a historical portrait), duties, and cadence.
 

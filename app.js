@@ -196,10 +196,7 @@ function fillPanel(id) {
   $("panel-story").textContent = p.story;
   $("panel-cadence").textContent = p.cadence;
   $("panel-caption").textContent = p.caption;
-  const img = $("panel-portrait");
-  const packed = (window.PORTRAITS && window.PORTRAITS[id]) || COMMONS_FALLBACK[id] || p.portrait;
-  img.src = packed;
-  img.alt = p.alt;
+  setPortrait(id, p);
   const list = $("panel-duties");
   list.replaceChildren();
   p.duties.forEach((d) => {
@@ -207,6 +204,30 @@ function fillPanel(id) {
     li.textContent = d;
     list.appendChild(li);
   });
+}
+
+function setPortrait(id, p) {
+  const img = $("panel-portrait");
+  const sources = [];
+  if (window.PORTRAITS && window.PORTRAITS[id]) sources.push(window.PORTRAITS[id]);
+  if (COMMONS_FALLBACK[id]) sources.push(COMMONS_FALLBACK[id]);
+  if (p.portrait) sources.push(p.portrait);
+  const unique = [...new Set(sources.filter(Boolean))];
+  let i = 0;
+  img.onload = () => {
+    img.onerror = null;
+  };
+  img.onerror = () => {
+    i += 1;
+    if (i < unique.length) img.src = unique[i];
+    else img.onerror = null;
+  };
+  img.alt = p.alt;
+  img.src = unique[0] || "";
+}
+
+function scheduleLines() {
+  requestAnimationFrame(() => requestAnimationFrame(drawLines));
 }
 
 function openPerson(id, push) {
@@ -231,7 +252,7 @@ function openPerson(id, push) {
   if (push && location.hash !== "#" + id) {
     history.pushState({ id }, "", "#" + id);
   }
-  requestAnimationFrame(drawLines);
+  scheduleLines();
 }
 
 function closePanel(push) {
@@ -247,7 +268,7 @@ function closePanel(push) {
   if (push && location.hash) {
     history.pushState({}, "", location.pathname + location.search);
   }
-  requestAnimationFrame(drawLines);
+  scheduleLines();
 }
 
 function box(el, root) {
@@ -263,12 +284,19 @@ function box(el, root) {
   };
 }
 
+function rowGroups(boxes, tol) {
+  const rows = [];
+  boxes.forEach((b) => {
+    const row = rows.find((r) => Math.abs(r[0].top - b.top) < tol);
+    if (row) row.push(b);
+    else rows.push([b]);
+  });
+  rows.forEach((r) => r.sort((a, c) => a.x - c.x));
+  return rows;
+}
+
 function drawLines() {
   if (!svg || !chart) return;
-  if (isNarrow()) {
-    svg.replaceChildren();
-    return;
-  }
   const ns = "http://www.w3.org/2000/svg";
   const carl = $("n-carl");
   const cordoba = $("n-cordoba");
@@ -279,10 +307,10 @@ function drawLines() {
   const c = box(carl, chart);
   const d = box(cordoba, chart);
   const js = jNodes.map((n) => box(n, chart));
+  const rows = rowGroups(js, 10);
+  const first = rows[0];
   const spineX = c.x;
-  const barY = (d.bottom + js[0].top) / 2;
-  const barLeft = js[0].x;
-  const barRight = js[js.length - 1].x;
+  const barY = (d.bottom + first[0].top) / 2;
 
   svg.setAttribute("viewBox", `0 0 ${chart.clientWidth} ${chart.clientHeight}`);
   svg.setAttribute("width", String(chart.clientWidth));
@@ -291,10 +319,26 @@ function drawLines() {
 
   const paths = [];
   paths.push(`M ${spineX} ${c.bottom} V ${barY}`);
-  paths.push(`M ${spineX} ${d.y} H ${d.right}`);
-  paths.push(`M ${barLeft} ${barY} H ${barRight}`);
-  js.forEach((jn) => {
-    paths.push(`M ${jn.x} ${barY} V ${jn.top}`);
+  if (d.right < spineX - 1) paths.push(`M ${spineX} ${d.y} H ${d.right}`);
+  else if (d.left > spineX + 1) paths.push(`M ${spineX} ${d.y} H ${d.left}`);
+
+  let prevBar = barY;
+  rows.forEach((row, i) => {
+    const y = i === 0 ? barY : (rows[i - 1][0].bottom + row[0].top) / 2;
+    if (i > 0) paths.push(`M ${spineX} ${prevBar} V ${y}`);
+    const left = row[0].x;
+    const right = row[row.length - 1].x;
+    let barLeft = left;
+    let barRight = right;
+    if (i > 0) {
+      barLeft = Math.min(left, spineX);
+      barRight = Math.max(right, spineX);
+    }
+    paths.push(`M ${barLeft} ${y} H ${barRight}`);
+    row.forEach((jn) => {
+      paths.push(`M ${jn.x} ${y} V ${jn.top}`);
+    });
+    prevBar = y;
   });
 
   paths.forEach((dAttr) => {
@@ -313,8 +357,8 @@ function drawLines() {
 document.querySelectorAll(".node").forEach((btn) => {
   btn.addEventListener("click", () => {
     const id = btn.dataset.id;
-    if (current === id) closePanel(true);
-    else openPerson(id, true);
+    if (current === id) return;
+    openPerson(id, true);
   });
 });
 
@@ -328,13 +372,10 @@ scrim.addEventListener("click", () => closePanel(true));
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && current) {
     e.preventDefault();
+    const was = current;
     closePanel(true);
-    const node = $("n-" + (location.hash || "").slice(1));
+    const node = $("n-" + was);
     if (node) node.focus();
-    else {
-      const last = document.querySelector(".node.is-on") || $("n-carl");
-      if (last) last.focus();
-    }
     return;
   }
   if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
@@ -371,7 +412,7 @@ window.addEventListener("resize", () => {
       panel.setAttribute("aria-modal", "false");
     }
   }
-  drawLines();
+  scheduleLines();
 });
 
 if (document.fonts && document.fonts.ready) {
@@ -380,6 +421,6 @@ if (document.fonts && document.fonts.ready) {
 
 const start = location.hash.replace(/^#/, "");
 if (start && STAFF[start]) openPerson(start, false);
-else requestAnimationFrame(drawLines);
+else openPerson("carl", false);
 
 window.addEventListener("load", drawLines);
