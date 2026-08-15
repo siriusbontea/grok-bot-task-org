@@ -13,9 +13,9 @@ const STAFF = {
       "Theater firewall."
     ],
     cadence: "Weekday brief, 6:00 AM. Monday scout, 7:30 AM.",
-    portrait: "portraits/carl.jpg",
-    alt: "Oil portrait of Carl von Clausewitz in a dark uniform with a red collar.",
-    caption: "Wilhelm Wach, oil portrait. Public domain."
+    portrait: "portraits/carl-imagine.png",
+    alt: "Generated photoreal reimagining of Carl von Clausewitz in a high-collar uniform. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   cordoba: {
     door: "Córdoba",
@@ -30,9 +30,9 @@ const STAFF = {
       "Quiet unless needed."
     ],
     cadence: "On call. No weekly clock of his own.",
-    portrait: "portraits/cordoba.jpg",
-    alt: "1791 engraving of Gonzalo Fernández de Córdoba in armor, holding a baton.",
-    caption: "Bartolomé Vázquez after José Ximeno, 1791 engraving. Later imagining. Public domain."
+    portrait: "portraits/cordoba-imagine.png",
+    alt: "Generated photoreal reimagining of Gonzalo Fernández de Córdoba in engraved armor. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   cato: {
     door: "Cato",
@@ -48,9 +48,9 @@ const STAFF = {
       "Never invents a code or books a trip unless told."
     ],
     cadence: "Weekdays 5:00 PM hours reminder. 8:30 AM catch-up only if needed.",
-    portrait: "portraits/cato.jpg",
-    alt: "Later engraving of Cato the Elder in profile, wearing a laurel wreath.",
-    caption: "Later imagining — engraving of Cato the Elder, not the Younger. Artist unknown. Public domain."
+    portrait: "portraits/cato-imagine.png",
+    alt: "Generated photoreal reimagining of Cato the Elder in dark robes. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   jomini: {
     door: "Jomini",
@@ -64,9 +64,9 @@ const STAFF = {
       "Red cell: what would have to be true for a recommendation to be wrong, the real edge cases, one constructive counter."
     ],
     cadence: "On call. No weekly clock.",
-    portrait: "portraits/jomini.jpg",
-    alt: "Painted portrait of Antoine-Henri Jomini in a dark uniform with gold epaulettes.",
-    caption: "Workshop of George Dawe. Public domain."
+    portrait: "portraits/jomini-imagine.png",
+    alt: "Generated photoreal reimagining of Antoine-Henri Jomini in a dark uniform. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   rommel: {
     door: "Rommel",
@@ -82,9 +82,9 @@ const STAFF = {
       "Does not host the coding swarm or mark its tasks complete."
     ],
     cadence: "On call with the work.",
-    portrait: "portraits/rommel.jpg",
-    alt: "1941 painted portrait of Erwin Rommel in a field cap.",
-    caption: "Wolfgang Willrich, 1941. Public domain (Commons PD tag)."
+    portrait: "portraits/rommel-imagine.png",
+    alt: "Generated photoreal reimagining of Erwin Rommel in a field cap. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   xenophon: {
     door: "Xenophon",
@@ -99,9 +99,9 @@ const STAFF = {
       "Never copy until a diff is approved."
     ],
     cadence: "Weekly logistics check, Monday 9:22 AM.",
-    portrait: "portraits/xenophon.jpg",
-    alt: "Photograph of a marble bust long identified as Xenophon.",
-    caption: "Marble bust, Berlin; plate from a 1905 handbook. Later imagining — no contemporary likeness. Public domain."
+    portrait: "portraits/xenophon-imagine.png",
+    alt: "Generated photoreal reimagining of Xenophon in a cloak. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   moltke: {
     door: "Moltke",
@@ -117,9 +117,9 @@ const STAFF = {
       "A response draft only when an owner is named."
     ],
     cadence: "On call for plans. Supports Monday 7:30 AM scout.",
-    portrait: "portraits/moltke.jpg",
-    alt: "Photograph of Helmuth von Moltke the Elder in a Prussian uniform.",
-    caption: "Carl Günther photograph. Moltke the Elder, not the nephew. Public domain."
+    portrait: "portraits/moltke-imagine.png",
+    alt: "Generated photoreal reimagining of Helmuth von Moltke the Elder in uniform. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   fukuzawa: {
     door: "Fukuzawa",
@@ -135,9 +135,9 @@ const STAFF = {
       "Never publish without an explicit go."
     ],
     cadence: "Weekday branding draft, 8:28 AM.",
-    portrait: "portraits/fukuzawa.jpg",
-    alt: "Studio photograph of Fukuzawa Yukichi in a dark Western jacket.",
-    caption: "Unknown photographer. Solo portrait. Public domain (Japan)."
+    portrait: "portraits/fukuzawa-imagine.png",
+    alt: "Generated photoreal reimagining of Fukuzawa Yukichi in a Western jacket. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   }
 };
 
@@ -209,9 +209,8 @@ function fillPanel(id) {
 function setPortrait(id, p) {
   const img = $("panel-portrait");
   const sources = [];
-  if (window.PORTRAITS && window.PORTRAITS[id]) sources.push(window.PORTRAITS[id]);
-  if (COMMONS_FALLBACK[id]) sources.push(COMMONS_FALLBACK[id]);
   if (p.portrait) sources.push(p.portrait);
+  if (COMMONS_FALLBACK[id]) sources.push(COMMONS_FALLBACK[id]);
   const unique = [...new Set(sources.filter(Boolean))];
   let i = 0;
   img.onload = () => {
