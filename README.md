@@ -1,6 +1,6 @@
-# Staff · grok-bot-task-org
+# Staff
 
-A public personal board: an interactive org chart of door names and seats. Click a name for role, story (with a historical portrait), duties, and cadence.
+A public personal board: an interactive org chart of door names and seats. Click a name for role, story (with a generated portrait), duties, and cadence.
 
 Live: https://siriusbontea.github.io/grok-bot-task-org/
 
@@ -23,7 +23,7 @@ Deep links: `#carl` `#cordoba` `#cato` `#jomini` `#rommel` `#xenophon` `#moltke`
 
 ## For later editors
 
-This page is public. Keep the copy to door names, seats, and the historical figures. Do not add workplace systems, internal tools, employer or vendor names, file-share paths, or private search language. Do not invent metrics, awards, or program names. Do not generate portraits. If you replace an image, confirm a public-domain or Creative Commons tag on the Commons file page and update `CREDITS.md`.
+This page is public. Keep the copy to door names, seats, and the historical figures. Do not add workplace systems, internal tools, employer or vendor names, file-share paths, or private search language. Do not invent metrics, awards, or program names. Story portraits are generated reimaginings (`portraits/*-imagine.png`); do not put faces on the door tiles. If you replace an imagine file, keep the caption honest and update `CREDITS.md`.
 
 ## License
 

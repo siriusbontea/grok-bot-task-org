@@ -5,7 +5,7 @@ const STAFF = {
     full: "Carl von Clausewitz",
     life: "1780–1831",
     role: "Routes the staff. Holds the weekday brief. Keeps work and personal theaters apart. Only all-theater seat besides the deputy.",
-    story: "Prussian general and the author of On War. Friction, fog, war as a continuation of politics. He wrote the book on staff thinking and died before finishing it.",
+    story: "He wrote how a staff thinks when the plan hits friction, and when force has to stay under politics. On War is that method. He never treated it as a finished manual, which is why this door routes the brief instead of reciting one.",
     duties: [
       "Route work to the right seat.",
       "Weekday morning brief.",
@@ -13,9 +13,9 @@ const STAFF = {
       "Theater firewall."
     ],
     cadence: "Weekday brief, 6:00 AM. Monday scout, 7:30 AM.",
-    portrait: "portraits/carl.jpg",
-    alt: "Oil portrait of Carl von Clausewitz in a dark uniform with a red collar.",
-    caption: "Wilhelm Wach, oil portrait. Public domain."
+    portrait: "portraits/carl-imagine.jpg",
+    alt: "Generated photoreal reimagining of Carl von Clausewitz in a high-collar uniform. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   cordoba: {
     door: "Córdoba",
@@ -23,16 +23,16 @@ const STAFF = {
     full: "Gonzalo Fernández de Córdoba, El Gran Capitán",
     life: "1453–1515",
     role: "Deputy. Covers CoS across both theaters. Not a second chief, not red cell, not a product seat.",
-    story: "Spanish commander of the Italian Wars. Built the tercio and the habit of winning with infantry, guns, and supply instead of a heroic charge. The staff mind of early modern Spain.",
+    story: "A French charge beat his first Italian army, so he rebuilt the infantry around pikes, guns, and supply. The later tercio grew from that habit. A deputy covers the whole field so the chief is not the only moving part.",
     duties: [
       "Cover when CoS is down.",
       "Same firewall, same routing judgment.",
       "Quiet unless needed."
     ],
     cadence: "On call. No weekly clock of his own.",
-    portrait: "portraits/cordoba.jpg",
-    alt: "1791 engraving of Gonzalo Fernández de Córdoba in armor, holding a baton.",
-    caption: "Bartolomé Vázquez after José Ximeno, 1791 engraving. Later imagining. Public domain."
+    portrait: "portraits/cordoba-imagine.jpg",
+    alt: "Generated photoreal reimagining of Gonzalo Fernández de Córdoba in engraved armor. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   cato: {
     door: "Cato",
@@ -40,7 +40,7 @@ const STAFF = {
     full: "Marcus Porcius Cato the Elder, the Censor",
     life: "234–149 BC",
     role: "Administration. Hours reminders and travel. Does not submit time or manage the calendar.",
-    story: "Roman censor. No waste, every denarius on a line. He wrote on farming and spoke against luxury. The books, not the battlefield.",
+    story: "He kept the household and the state on the same ledger. As censor he cut waste. He wrote a farming manual, not a battle narrative. Administration is the line-item.",
     duties: [
       "Weekday hours reminder with a rough split.",
       "Morning catch-up only if the night before was unanswered.",
@@ -48,9 +48,9 @@ const STAFF = {
       "Never invents a code or books a trip unless told."
     ],
     cadence: "Weekdays 5:00 PM hours reminder. 8:30 AM catch-up only if needed.",
-    portrait: "portraits/cato.jpg",
-    alt: "Later engraving of Cato the Elder in profile, wearing a laurel wreath.",
-    caption: "Later imagining — engraving of Cato the Elder, not the Younger. Artist unknown. Public domain."
+    portrait: "portraits/cato-imagine.jpg",
+    alt: "Generated photoreal reimagining of Cato the Elder in dark robes. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   jomini: {
     door: "Jomini",
@@ -58,15 +58,15 @@ const STAFF = {
     full: "Antoine-Henri Jomini",
     life: "1779–1869",
     role: "Intelligence and red cell. One theater per task. Never writes the original product he is asked to oppose.",
-    story: "Swiss officer who served Napoleon and then the Tsar. The Art of War, lines of operation, the map as an argument. The other 19th-century staff theorist beside Clausewitz.",
+    story: "He served Napoleon, then the Tsar, and wrote The Art of War as a map you can argue with: lines of operation, the geometry of a campaign. That is a red cell. He does not write the plan he is asked to break.",
     duties: [
       "Program and competitive research from live sources.",
       "Red cell: what would have to be true for a recommendation to be wrong, the real edge cases, one constructive counter."
     ],
     cadence: "On call. No weekly clock.",
-    portrait: "portraits/jomini.jpg",
-    alt: "Painted portrait of Antoine-Henri Jomini in a dark uniform with gold epaulettes.",
-    caption: "Workshop of George Dawe. Public domain."
+    portrait: "portraits/jomini-imagine.jpg",
+    alt: "Generated photoreal reimagining of Antoine-Henri Jomini in a dark uniform. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   rommel: {
     door: "Rommel",
@@ -74,7 +74,7 @@ const STAFF = {
     full: "Erwin Rommel",
     life: "1891–1944",
     role: "Operations. Reads status, drafts, tracks work. Does not publish to customer or program surfaces. The principal posts as himself.",
-    story: "German field marshal. North Africa made the reputation. He was not a staff theorist; he was a field commander. Forced to suicide in 1944 after the plot against Hitler. The name is a door, not a eulogy.",
+    story: "He ran operations from the front. Tempo was the method: see the ground, move the units, write it down after. Infantry Attacks is a field notebook. North Africa is the reputation because he was there, not because he wrote a doctrine.",
     duties: [
       "Inspect status.",
       "Draft decision and issue prose for the principal to send.",
@@ -82,9 +82,9 @@ const STAFF = {
       "Does not host the coding swarm or mark its tasks complete."
     ],
     cadence: "On call with the work.",
-    portrait: "portraits/rommel.jpg",
-    alt: "1941 painted portrait of Erwin Rommel in a field cap.",
-    caption: "Wolfgang Willrich, 1941. Public domain (Commons PD tag)."
+    portrait: "portraits/rommel-imagine.jpg",
+    alt: "Generated photoreal reimagining of Erwin Rommel in a field cap. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   xenophon: {
     door: "Xenophon",
@@ -92,16 +92,16 @@ const STAFF = {
     full: "Xenophon of Athens",
     life: "c. 430–354 BC",
     role: "Logistics. Sync health and file-structure recommendations. No copies without an approved diff.",
-    story: "Student of Socrates. After Cunaxa he helped lead the Ten Thousand home from Mesopotamia. The Anabasis is a logistics book wearing a war memoir. Get the column home. Count the wagons.",
+    story: "After Cunaxa the army was stranded in Mesopotamia. He helped walk the Ten Thousand home and wrote the Anabasis as the count: marches, food, the column intact. It is a logistics book wearing a war memoir.",
     duties: [
       "Weekly compare of the file tree against the destination.",
       "Up to three structure notes.",
       "Never copy until a diff is approved."
     ],
     cadence: "Weekly logistics check, Monday 9:22 AM.",
-    portrait: "portraits/xenophon.jpg",
-    alt: "Photograph of a marble bust long identified as Xenophon.",
-    caption: "Marble bust, Berlin; plate from a 1905 handbook. Later imagining — no contemporary likeness. Public domain."
+    portrait: "portraits/xenophon-imagine.jpg",
+    alt: "Generated photoreal reimagining of Xenophon in a cloak. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   moltke: {
     door: "Moltke",
@@ -109,7 +109,7 @@ const STAFF = {
     full: "Helmuth von Moltke the Elder",
     life: "1800–1891",
     role: "Plans. Decision documents. Supports the Monday scout.",
-    story: "Chief of the Prussian General Staff. No plan survives contact with the enemy is the line people remember. He built the staff that could change the plan.",
+    story: "Chief of the Prussian General Staff. He wrote that a plan of operations does not hold with any certainty past first contact with the main force. He built the staff whose job was the next plan, in time.",
     duties: [
       "PRFAQ, statements of work, courses of action.",
       "Drafts stay local.",
@@ -117,9 +117,9 @@ const STAFF = {
       "A response draft only when an owner is named."
     ],
     cadence: "On call for plans. Supports Monday 7:30 AM scout.",
-    portrait: "portraits/moltke.jpg",
-    alt: "Photograph of Helmuth von Moltke the Elder in a Prussian uniform.",
-    caption: "Carl Günther photograph. Moltke the Elder, not the nephew. Public domain."
+    portrait: "portraits/moltke-imagine.jpg",
+    alt: "Generated photoreal reimagining of Helmuth von Moltke the Elder in uniform. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   fukuzawa: {
     door: "Fukuzawa",
@@ -127,7 +127,7 @@ const STAFF = {
     full: "Fukuzawa Yukichi",
     life: "1835–1901",
     role: "Off the staff row. Public professional branding drafts. The principal reviews before anything goes live.",
-    story: "Low-ranking samurai son who walked away from rank. Saw America in 1860 and Europe in 1862. Founded Keio. Wrote An Encouragement of Learning: heaven does not make one man above another. Independence and self-respect. Face on the ¥10,000 note.",
+    story: "Low-ranking samurai son who left inherited rank. He saw America in 1860 and Europe in 1862, founded Keio, and wrote An Encouragement of Learning: heaven does not create one man above another. He declined government office and taught in public, under his own name. This door drafts a face. The principal still approves it.",
     duties: [
       "Draft public posts and profile copy that a stranger can understand.",
       "Pair drafts with an image.",
@@ -135,9 +135,9 @@ const STAFF = {
       "Never publish without an explicit go."
     ],
     cadence: "Weekday branding draft, 8:28 AM.",
-    portrait: "portraits/fukuzawa.jpg",
-    alt: "Studio photograph of Fukuzawa Yukichi in a dark Western jacket.",
-    caption: "Unknown photographer. Solo portrait. Public domain (Japan)."
+    portrait: "portraits/fukuzawa-imagine.jpg",
+    alt: "Generated photoreal reimagining of Fukuzawa Yukichi in a Western jacket. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   }
 };
 
@@ -196,10 +196,7 @@ function fillPanel(id) {
   $("panel-story").textContent = p.story;
   $("panel-cadence").textContent = p.cadence;
   $("panel-caption").textContent = p.caption;
-  const img = $("panel-portrait");
-  const packed = (window.PORTRAITS && window.PORTRAITS[id]) || COMMONS_FALLBACK[id] || p.portrait;
-  img.src = packed;
-  img.alt = p.alt;
+  setPortrait(id, p);
   const list = $("panel-duties");
   list.replaceChildren();
   p.duties.forEach((d) => {
@@ -207,6 +204,29 @@ function fillPanel(id) {
     li.textContent = d;
     list.appendChild(li);
   });
+}
+
+function setPortrait(id, p) {
+  const img = $("panel-portrait");
+  const sources = [];
+  if (p.portrait) sources.push(p.portrait);
+  if (COMMONS_FALLBACK[id]) sources.push(COMMONS_FALLBACK[id]);
+  const unique = [...new Set(sources.filter(Boolean))];
+  let i = 0;
+  img.onload = () => {
+    img.onerror = null;
+  };
+  img.onerror = () => {
+    i += 1;
+    if (i < unique.length) img.src = unique[i];
+    else img.onerror = null;
+  };
+  img.alt = p.alt;
+  img.src = unique[0] || "";
+}
+
+function scheduleLines() {
+  requestAnimationFrame(() => requestAnimationFrame(drawLines));
 }
 
 function openPerson(id, push) {
@@ -221,17 +241,13 @@ function openPerson(id, push) {
     n.classList.toggle("is-on", on);
     n.setAttribute("aria-expanded", on ? "true" : "false");
   });
-  if (isNarrow()) {
-    scrim.hidden = false;
-    panel.setAttribute("aria-modal", "true");
-  } else {
-    scrim.hidden = true;
-    panel.setAttribute("aria-modal", "false");
-  }
+  panel.setAttribute("aria-modal", "false");
+  if (isNarrow()) scrim.hidden = false;
+  else scrim.hidden = true;
   if (push && location.hash !== "#" + id) {
     history.pushState({ id }, "", "#" + id);
   }
-  requestAnimationFrame(drawLines);
+  scheduleLines();
 }
 
 function closePanel(push) {
@@ -247,7 +263,7 @@ function closePanel(push) {
   if (push && location.hash) {
     history.pushState({}, "", location.pathname + location.search);
   }
-  requestAnimationFrame(drawLines);
+  scheduleLines();
 }
 
 function box(el, root) {
@@ -263,12 +279,19 @@ function box(el, root) {
   };
 }
 
+function rowGroups(boxes, tol) {
+  const rows = [];
+  boxes.forEach((b) => {
+    const row = rows.find((r) => Math.abs(r[0].top - b.top) < tol);
+    if (row) row.push(b);
+    else rows.push([b]);
+  });
+  rows.forEach((r) => r.sort((a, c) => a.x - c.x));
+  return rows;
+}
+
 function drawLines() {
   if (!svg || !chart) return;
-  if (isNarrow()) {
-    svg.replaceChildren();
-    return;
-  }
   const ns = "http://www.w3.org/2000/svg";
   const carl = $("n-carl");
   const cordoba = $("n-cordoba");
@@ -279,10 +302,10 @@ function drawLines() {
   const c = box(carl, chart);
   const d = box(cordoba, chart);
   const js = jNodes.map((n) => box(n, chart));
+  const rows = rowGroups(js, 10);
+  const first = rows[0];
   const spineX = c.x;
-  const barY = (d.bottom + js[0].top) / 2;
-  const barLeft = js[0].x;
-  const barRight = js[js.length - 1].x;
+  const barY = (d.bottom + first[0].top) / 2;
 
   svg.setAttribute("viewBox", `0 0 ${chart.clientWidth} ${chart.clientHeight}`);
   svg.setAttribute("width", String(chart.clientWidth));
@@ -291,10 +314,26 @@ function drawLines() {
 
   const paths = [];
   paths.push(`M ${spineX} ${c.bottom} V ${barY}`);
-  paths.push(`M ${spineX} ${d.y} H ${d.right}`);
-  paths.push(`M ${barLeft} ${barY} H ${barRight}`);
-  js.forEach((jn) => {
-    paths.push(`M ${jn.x} ${barY} V ${jn.top}`);
+  if (d.right < spineX - 1) paths.push(`M ${spineX} ${d.y} H ${d.right}`);
+  else if (d.left > spineX + 1) paths.push(`M ${spineX} ${d.y} H ${d.left}`);
+
+  let prevBar = barY;
+  rows.forEach((row, i) => {
+    const y = i === 0 ? barY : (rows[i - 1][0].bottom + row[0].top) / 2;
+    if (i > 0) paths.push(`M ${spineX} ${prevBar} V ${y}`);
+    const left = row[0].x;
+    const right = row[row.length - 1].x;
+    let barLeft = left;
+    let barRight = right;
+    if (i > 0) {
+      barLeft = Math.min(left, spineX);
+      barRight = Math.max(right, spineX);
+    }
+    paths.push(`M ${barLeft} ${y} H ${barRight}`);
+    row.forEach((jn) => {
+      paths.push(`M ${jn.x} ${y} V ${jn.top}`);
+    });
+    prevBar = y;
   });
 
   paths.forEach((dAttr) => {
@@ -311,11 +350,16 @@ function drawLines() {
 }
 
 document.querySelectorAll(".node").forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
     const id = btn.dataset.id;
     if (current === id) closePanel(true);
     else openPerson(id, true);
   });
+});
+
+document.getElementById("board").addEventListener("click", () => {
+  if (current) closePanel(true);
 });
 
 document.querySelectorAll(".tab").forEach((btn) => {
@@ -328,21 +372,23 @@ scrim.addEventListener("click", () => closePanel(true));
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && current) {
     e.preventDefault();
+    const was = current;
     closePanel(true);
-    const node = $("n-" + (location.hash || "").slice(1));
+    const node = $("n-" + was);
     if (node) node.focus();
-    else {
-      const last = document.querySelector(".node.is-on") || $("n-carl");
-      if (last) last.focus();
-    }
     return;
   }
-  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft" || e.key === "Home" || e.key === "End") {
     const tabs = [...document.querySelectorAll(".tab")];
     const i = tabs.findIndex((t) => t.getAttribute("aria-selected") === "true");
     if (i < 0 || !current) return;
     if (document.activeElement && document.activeElement.classList.contains("tab")) {
-      const next = e.key === "ArrowRight" ? (i + 1) % tabs.length : (i - 1 + tabs.length) % tabs.length;
+      let next = i;
+      if (e.key === "ArrowRight") next = (i + 1) % tabs.length;
+      if (e.key === "ArrowLeft") next = (i - 1 + tabs.length) % tabs.length;
+      if (e.key === "Home") next = 0;
+      if (e.key === "End") next = tabs.length - 1;
+      e.preventDefault();
       tabs[next].focus();
       setTab(tabs[next].dataset.tab);
     }
@@ -363,15 +409,10 @@ window.addEventListener("popstate", () => {
 
 window.addEventListener("resize", () => {
   if (current) {
-    if (isNarrow()) {
-      scrim.hidden = false;
-      panel.setAttribute("aria-modal", "true");
-    } else {
-      scrim.hidden = true;
-      panel.setAttribute("aria-modal", "false");
-    }
+    panel.setAttribute("aria-modal", "false");
+    scrim.hidden = !isNarrow();
   }
-  drawLines();
+  scheduleLines();
 });
 
 if (document.fonts && document.fonts.ready) {
@@ -380,6 +421,6 @@ if (document.fonts && document.fonts.ready) {
 
 const start = location.hash.replace(/^#/, "");
 if (start && STAFF[start]) openPerson(start, false);
-else requestAnimationFrame(drawLines);
+else openPerson("carl", false);
 
 window.addEventListener("load", drawLines);

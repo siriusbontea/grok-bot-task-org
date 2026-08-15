@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Staff · grok-bot-task-org</title>
-  <meta name="description" content="Door names and seats. The story is on the portrait.">
+  <title>Staff</title>
+  <meta name="description" content="Door names and seats. The story is on the portrait. Click a door.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,560;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
@@ -16,9 +16,9 @@
 
   <header class="mast">
     <div class="mast-inner">
-      <p class="kicker">grok-bot-task-org</p>
+      <p class="kicker">Personal board</p>
       <h1>Staff</h1>
-      <p class="lede">Door names and seats. The story is on the portrait.</p>
+      <p class="lede">Door names and seats. The story is on the portrait. Click a door.</p>
     </div>
   </header>
 
@@ -84,12 +84,12 @@
       <h2 class="panel-door" id="panel-door"></h2>
       <p class="panel-full" id="panel-full"></p>
       <p class="panel-life" id="panel-life"></p>
+      <p class="panel-cadence" id="panel-cadence"></p>
 
       <div class="tabs" role="tablist" aria-label="Dossier sections">
-        <button class="tab" type="button" role="tab" id="tab-btn-role" aria-controls="tab-role" data-tab="role">Role</button>
+        <button class="tab" type="button" role="tab" id="tab-btn-role" aria-controls="tab-role" data-tab="role" aria-selected="false">Role</button>
         <button class="tab" type="button" role="tab" id="tab-btn-story" aria-controls="tab-story" data-tab="story" aria-selected="true">Story</button>
-        <button class="tab" type="button" role="tab" id="tab-btn-duties" aria-controls="tab-duties" data-tab="duties">Duties</button>
-        <button class="tab" type="button" role="tab" id="tab-btn-cadence" aria-controls="tab-cadence" data-tab="cadence">Cadence</button>
+        <button class="tab" type="button" role="tab" id="tab-btn-duties" aria-controls="tab-duties" data-tab="duties" aria-selected="false">Duties</button>
       </div>
 
       <div class="tab-panel" id="tab-role" role="tabpanel" aria-labelledby="tab-btn-role" hidden>
@@ -105,9 +105,6 @@
       <div class="tab-panel" id="tab-duties" role="tabpanel" aria-labelledby="tab-btn-duties" hidden>
         <ul class="duty-list" id="panel-duties"></ul>
       </div>
-      <div class="tab-panel" id="tab-cadence" role="tabpanel" aria-labelledby="tab-btn-cadence" hidden>
-        <p class="cadence-line" id="panel-cadence"></p>
-      </div>
     </aside>
   </div>
 
@@ -119,7 +116,6 @@
     <span>Personal board. Public map.</span>
   </footer>
 
-  <script src="portraits.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
