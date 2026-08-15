@@ -5,7 +5,7 @@ const STAFF = {
     full: "Carl von Clausewitz",
     life: "1780–1831",
     role: "Routes the staff. Holds the weekday brief. Keeps work and personal theaters apart. Only all-theater seat besides the deputy.",
-    story: "Prussian general and the author of On War. Friction, fog, war as a continuation of politics. He wrote the book on staff thinking and died before finishing it.",
+    story: "He wrote how a staff thinks when the plan hits friction, and when force has to stay under politics. On War is that method. He never treated it as a finished manual, which is why this door routes the brief instead of reciting one.",
     duties: [
       "Route work to the right seat.",
       "Weekday morning brief.",
@@ -23,7 +23,7 @@ const STAFF = {
     full: "Gonzalo Fernández de Córdoba, El Gran Capitán",
     life: "1453–1515",
     role: "Deputy. Covers CoS across both theaters. Not a second chief, not red cell, not a product seat.",
-    story: "Spanish commander of the Italian Wars. Built the tercio and the habit of winning with infantry, guns, and supply instead of a heroic charge. The staff mind of early modern Spain.",
+    story: "A French charge beat his first Italian army, so he rebuilt the infantry around pikes, guns, and supply. The later tercio grew from that habit. A deputy covers the whole field so the chief is not the only moving part.",
     duties: [
       "Cover when CoS is down.",
       "Same firewall, same routing judgment.",
@@ -40,7 +40,7 @@ const STAFF = {
     full: "Marcus Porcius Cato the Elder, the Censor",
     life: "234–149 BC",
     role: "Administration. Hours reminders and travel. Does not submit time or manage the calendar.",
-    story: "Roman censor. No waste, every denarius on a line. He wrote on farming and spoke against luxury. The books, not the battlefield.",
+    story: "He kept the household and the state on the same ledger. As censor he cut waste. He wrote a farming manual, not a battle narrative. Administration is the line-item.",
     duties: [
       "Weekday hours reminder with a rough split.",
       "Morning catch-up only if the night before was unanswered.",
@@ -58,7 +58,7 @@ const STAFF = {
     full: "Antoine-Henri Jomini",
     life: "1779–1869",
     role: "Intelligence and red cell. One theater per task. Never writes the original product he is asked to oppose.",
-    story: "Swiss officer who served Napoleon and then the Tsar. The Art of War, lines of operation, the map as an argument. The other 19th-century staff theorist beside Clausewitz.",
+    story: "He served Napoleon, then the Tsar, and wrote The Art of War as a map you can argue with: lines of operation, the geometry of a campaign. That is a red cell. He does not write the plan he is asked to break.",
     duties: [
       "Program and competitive research from live sources.",
       "Red cell: what would have to be true for a recommendation to be wrong, the real edge cases, one constructive counter."
@@ -74,7 +74,7 @@ const STAFF = {
     full: "Erwin Rommel",
     life: "1891–1944",
     role: "Operations. Reads status, drafts, tracks work. Does not publish to customer or program surfaces. The principal posts as himself.",
-    story: "German field marshal. North Africa made the reputation. He was not a staff theorist; he was a field commander. Forced to suicide in 1944 after the plot against Hitler. The name is a door, not a eulogy.",
+    story: "He ran operations from the front. Tempo was the method: see the ground, move the units, write it down after. Infantry Attacks is a field notebook. North Africa is the reputation because he was there, not because he wrote a doctrine.",
     duties: [
       "Inspect status.",
       "Draft decision and issue prose for the principal to send.",
@@ -92,7 +92,7 @@ const STAFF = {
     full: "Xenophon of Athens",
     life: "c. 430–354 BC",
     role: "Logistics. Sync health and file-structure recommendations. No copies without an approved diff.",
-    story: "Student of Socrates. After Cunaxa he helped lead the Ten Thousand home from Mesopotamia. The Anabasis is a logistics book wearing a war memoir. Get the column home. Count the wagons.",
+    story: "After Cunaxa the army was stranded in Mesopotamia. He helped walk the Ten Thousand home and wrote the Anabasis as the count: marches, food, the column intact. It is a logistics book wearing a war memoir.",
     duties: [
       "Weekly compare of the file tree against the destination.",
       "Up to three structure notes.",
@@ -109,7 +109,7 @@ const STAFF = {
     full: "Helmuth von Moltke the Elder",
     life: "1800–1891",
     role: "Plans. Decision documents. Supports the Monday scout.",
-    story: "Chief of the Prussian General Staff. No plan survives contact with the enemy is the line people remember. He built the staff that could change the plan.",
+    story: "Chief of the Prussian General Staff. He wrote that a plan of operations does not hold with any certainty past first contact with the main force. He built the staff whose job was the next plan, in time.",
     duties: [
       "PRFAQ, statements of work, courses of action.",
       "Drafts stay local.",
@@ -127,7 +127,7 @@ const STAFF = {
     full: "Fukuzawa Yukichi",
     life: "1835–1901",
     role: "Off the staff row. Public professional branding drafts. The principal reviews before anything goes live.",
-    story: "Low-ranking samurai son who walked away from rank. Saw America in 1860 and Europe in 1862. Founded Keio. Wrote An Encouragement of Learning: heaven does not make one man above another. Independence and self-respect. Face on the ¥10,000 note.",
+    story: "Low-ranking samurai son who left inherited rank. He saw America in 1860 and Europe in 1862, founded Keio, and wrote An Encouragement of Learning: heaven does not create one man above another. He declined government office and taught in public, under his own name. This door drafts a face. The principal still approves it.",
     duties: [
       "Draft public posts and profile copy that a stranger can understand.",
       "Pair drafts with an image.",
