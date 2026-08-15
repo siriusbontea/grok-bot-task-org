@@ -2,7 +2,7 @@
 
 A public personal board: an interactive org chart of door names and seats. Click a name for role, story (with a historical portrait), duties, and cadence.
 
-Live path when published: `https://siriusbontea.github.io/grok-bot-task-org/`
+Live: https://siriusbontea.github.io/grok-bot-task-org/
 
 ## Serve locally
 
@@ -17,8 +17,7 @@ Then open `http://localhost:8080/`. Or just open `index.html` in a browser.
 ## What’s here
 
 - `index.html`, `styles.css`, `app.js` — the site
-- `portraits/` — local Wikimedia Commons files (not hotlinked)
-- `portraits/CREDITS.md` — file name, Commons file, author, license, who it is
+- `portraits/` — Wikimedia Commons files (credits in `portraits/CREDITS.md`)
 
 Deep links: `#carl` `#cordoba` `#cato` `#jomini` `#rommel` `#xenophon` `#moltke` `#fukuzawa`
 
