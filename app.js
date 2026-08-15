@@ -242,13 +242,9 @@ function openPerson(id, push) {
     n.classList.toggle("is-on", on);
     n.setAttribute("aria-expanded", on ? "true" : "false");
   });
-  if (isNarrow()) {
-    scrim.hidden = false;
-    panel.setAttribute("aria-modal", "true");
-  } else {
-    scrim.hidden = true;
-    panel.setAttribute("aria-modal", "false");
-  }
+  panel.setAttribute("aria-modal", "false");
+  if (isNarrow()) scrim.hidden = false;
+  else scrim.hidden = true;
   if (push && location.hash !== "#" + id) {
     history.pushState({ id }, "", "#" + id);
   }
@@ -355,11 +351,16 @@ function drawLines() {
 }
 
 document.querySelectorAll(".node").forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
     const id = btn.dataset.id;
-    if (current === id) return;
-    openPerson(id, true);
+    if (current === id) closePanel(true);
+    else openPerson(id, true);
   });
+});
+
+document.getElementById("board").addEventListener("click", () => {
+  if (current) closePanel(true);
 });
 
 document.querySelectorAll(".tab").forEach((btn) => {
@@ -378,12 +379,17 @@ document.addEventListener("keydown", (e) => {
     if (node) node.focus();
     return;
   }
-  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft" || e.key === "Home" || e.key === "End") {
     const tabs = [...document.querySelectorAll(".tab")];
     const i = tabs.findIndex((t) => t.getAttribute("aria-selected") === "true");
     if (i < 0 || !current) return;
     if (document.activeElement && document.activeElement.classList.contains("tab")) {
-      const next = e.key === "ArrowRight" ? (i + 1) % tabs.length : (i - 1 + tabs.length) % tabs.length;
+      let next = i;
+      if (e.key === "ArrowRight") next = (i + 1) % tabs.length;
+      if (e.key === "ArrowLeft") next = (i - 1 + tabs.length) % tabs.length;
+      if (e.key === "Home") next = 0;
+      if (e.key === "End") next = tabs.length - 1;
+      e.preventDefault();
       tabs[next].focus();
       setTab(tabs[next].dataset.tab);
     }
@@ -404,13 +410,8 @@ window.addEventListener("popstate", () => {
 
 window.addEventListener("resize", () => {
   if (current) {
-    if (isNarrow()) {
-      scrim.hidden = false;
-      panel.setAttribute("aria-modal", "true");
-    } else {
-      scrim.hidden = true;
-      panel.setAttribute("aria-modal", "false");
-    }
+    panel.setAttribute("aria-modal", "false");
+    scrim.hidden = !isNarrow();
   }
   scheduleLines();
 });

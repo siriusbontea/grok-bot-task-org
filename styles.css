@@ -344,7 +344,7 @@ body::before {
 .panel-close {
   appearance: none;
   margin: 0;
-  padding: 0.2rem 0;
+  padding: 0.35rem 0;
   border: 0;
   background: none;
   font-family: var(--mono);
@@ -353,6 +353,8 @@ body::before {
   text-transform: uppercase;
   color: var(--brass-deep);
   cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
 }
 
 .panel-close:hover {
@@ -409,7 +411,7 @@ body::before {
 .tab {
   appearance: none;
   margin: 0;
-  padding: 0.2rem 0;
+  padding: 0.35rem 0;
   border: 0;
   background: none;
   font-family: var(--mono);
@@ -419,6 +421,10 @@ body::before {
   text-transform: uppercase;
   color: #7a6d58;
   cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--ink);
 }
 
 .tab[aria-selected="true"] {
