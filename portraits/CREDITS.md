@@ -17,7 +17,7 @@ The Story tab shows generated photoreal reimaginings. They are not historical ph
 
 ## Reference only (not shown on the live board)
 
-Earlier Story sources from Wikimedia Commons. Kept here as references. The live board loads an imagine file first and only falls back to Commons if that file is missing.
+Earlier Story sources from Wikimedia Commons. Kept here as references. The live board loads an imagine file first and only falls back to Commons if that file is missing. Vauban and Polybius have no imagine file yet, so Commons is the live Story image for those two doors.
 
 ### carl.jpg
 
@@ -78,3 +78,17 @@ Earlier Story sources from Wikimedia Commons. Kept here as references. The live 
 - License: Public domain
 - Source: National Diet Library portrait collection
 - Who: Fukuzawa Yukichi (1835–1901). Solo studio portrait, not a group photograph.
+
+### vauban.jpg
+
+- Commons file: [File:Vauban_picture.jpg](https://commons.wikimedia.org/wiki/File:Vauban_picture.jpg)
+- Author: Photograph by Georgius LXXXIX, 31 March 2007. Painting after Hyacinthe Rigaud (1659–1743), turn of the 17th/18th century
+- License: CC BY-SA 3.0 / GFDL. The photograph is not public domain.
+- Who: Sébastien Le Prestre de Vauban (1633–1707)
+
+### polybius.jpg
+
+- Commons file: [File:Polybios_head.JPG](https://commons.wikimedia.org/wiki/File:Polybios_head.JPG)
+- Author: Photograph by Manfred Werner - Tsui. Sculpture: Alois Düll, “Polybios”, 1899 (gypsum model for the Austrian Parliament)
+- License: CC BY-SA 2.5
+- Who: Later imagining of Polybius of Megalopolis. No contemporary likeness survives.

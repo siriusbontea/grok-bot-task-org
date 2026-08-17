@@ -19,7 +19,7 @@ Then open `http://localhost:8080/`. Or just open `index.html` in a browser.
 - `index.html`, `styles.css`, `app.js` — the site
 - `portraits/` — Wikimedia Commons files (credits in `portraits/CREDITS.md`)
 
-Deep links: `#carl` `#cordoba` `#cato` `#jomini` `#rommel` `#xenophon` `#moltke` `#fukuzawa`
+Deep links: `#carl` `#cordoba` `#cato` `#jomini` `#rommel` `#xenophon` `#moltke` `#fukuzawa` `#vauban` `#polybius`
 
 ## For later editors
 
