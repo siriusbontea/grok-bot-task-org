@@ -138,6 +138,40 @@ const STAFF = {
     portrait: "portraits/fukuzawa-imagine.jpg",
     alt: "Generated photoreal reimagining of Fukuzawa Yukichi in a Western jacket. Not a historical photograph.",
     caption: "Generated reimagining. Not a historical photograph."
+  },
+  vauban: {
+    door: "Vauban",
+    code: "Design",
+    full: "Sébastien Le Prestre de Vauban",
+    life: "1633–1707",
+    role: "Off the staff row. Design. The shape of a thing, then the change. The principal still publishes.",
+    story: "He spent a career making and unmaking walls. A fortress was geometry and supply. He wrote that a place well sited is already half held. Design is the line before the fight.",
+    duties: [
+      "Keep the rules consistent.",
+      "Surgical edits only.",
+      "Flag what is out of balance.",
+      "Do not write the career packet or the staff brief."
+    ],
+    cadence: "On call with the work.",
+    alt: "Later painted likeness of Sébastien Le Prestre de Vauban. Not a photograph from life.",
+    caption: "Later painted likeness. Not a photograph from life."
+  },
+  polybius: {
+    door: "Polybius",
+    code: "Continuity",
+    full: "Polybius of Megalopolis",
+    life: "c. 200–c. 118 BC",
+    role: "Off the staff row. Continuity. Keeps later books honest to the first. The principal still publishes.",
+    story: "He wrote the Histories so a reader could see why Rome rose: mixed constitution, the accident, the habit. Continuity is that job. One book must still mean the same thing in the next.",
+    duties: [
+      "Cross-book alignment.",
+      "Keep terminology consistent.",
+      "Flag a contradiction.",
+      "Do not rewrite the argument unless Design or the chief asked."
+    ],
+    cadence: "On call with the work.",
+    alt: "Later sculpted head of Polybius. No contemporary likeness survives.",
+    caption: "Later imagining. No contemporary likeness survives."
   }
 };
 
@@ -149,10 +183,12 @@ const COMMONS_FALLBACK = {
   rommel: "https://commons.wikimedia.org/wiki/Special:FilePath/Wolfgang_Willrich_-_Portr%C3%A4t_Erwin_Rommel,_1941.jpg",
   xenophon: "https://commons.wikimedia.org/wiki/Special:FilePath/Xenophon.jpg",
   moltke: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Helmuth_von_Moltke_the_Elder_(by_Carl_G%C3%BCnther)_-_BNF_Gallica.jpg",
-  fukuzawa: "https://commons.wikimedia.org/wiki/Special:FilePath/Fukuzawa_Yukichi.jpg"
+  fukuzawa: "https://commons.wikimedia.org/wiki/Special:FilePath/Fukuzawa_Yukichi.jpg",
+  vauban: "https://commons.wikimedia.org/wiki/Special:FilePath/Vauban_picture.jpg",
+  polybius: "https://commons.wikimedia.org/wiki/Special:FilePath/Polybios_head.JPG"
 };
 
-const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "fukuzawa"];
+const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "fukuzawa", "vauban", "polybius"];
 
 const shell = document.getElementById("shell");
 const panel = document.getElementById("panel");
