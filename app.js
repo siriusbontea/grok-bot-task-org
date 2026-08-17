@@ -153,8 +153,9 @@ const STAFF = {
       "Do not write the career packet or the staff brief."
     ],
     cadence: "On call with the work.",
-    alt: "Later painted likeness of Sébastien Le Prestre de Vauban. Not a photograph from life.",
-    caption: "Later painted likeness. Not a photograph from life."
+    portrait: "portraits/vauban-imagine.jpg",
+    alt: "Generated photoreal reimagining of Sébastien Le Prestre de Vauban in engraved armor. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   },
   polybius: {
     door: "Polybius",
@@ -170,8 +171,9 @@ const STAFF = {
       "Do not rewrite the argument unless Design or the chief asked."
     ],
     cadence: "On call with the work.",
-    alt: "Later sculpted head of Polybius. No contemporary likeness survives.",
-    caption: "Later imagining. No contemporary likeness survives."
+    portrait: "portraits/polybius-imagine.jpg",
+    alt: "Generated photoreal reimagining of Polybius of Megalopolis in a cloak. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   }
 };
 

@@ -14,10 +14,12 @@ The Story tab shows generated photoreal reimaginings. They are not historical ph
 | `xenophon-imagine.png` | Xenophon | Generated reimagining. Not a historical photograph. |
 | `moltke-imagine.png` | Moltke | Generated reimagining. Not a historical photograph. |
 | `fukuzawa-imagine.png` | Fukuzawa | Generated reimagining. Not a historical photograph. |
+| `vauban-imagine.jpg` | Vauban | Generated reimagining. Not a historical photograph. |
+| `polybius-imagine.jpg` | Polybius | Generated reimagining. Not a historical photograph. |
 
 ## Reference only (not shown on the live board)
 
-Earlier Story sources from Wikimedia Commons. Kept here as references. The live board loads an imagine file first and only falls back to Commons if that file is missing. Vauban and Polybius have no imagine file yet, so Commons is the live Story image for those two doors.
+Earlier Story sources from Wikimedia Commons. Kept here as references. The live board loads an imagine file first and only falls back to Commons if that file is missing.
 
 ### carl.jpg
 
