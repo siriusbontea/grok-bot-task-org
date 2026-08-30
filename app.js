@@ -126,7 +126,7 @@ const STAFF = {
     code: "Career",
     full: "Fukuzawa Yukichi",
     life: "1835–1901",
-    role: "Off the staff row. Public professional branding drafts. The principal reviews before anything goes live.",
+    role: "Special Staff. Public professional branding drafts. The principal reviews before anything goes live.",
     story: "Low-ranking samurai son who left inherited rank. He saw America in 1860 and Europe in 1862, founded Keio, and wrote An Encouragement of Learning: heaven does not create one man above another. He declined government office and taught in public, under his own name. This door drafts a face. The principal still approves it.",
     duties: [
       "Draft public posts and profile copy that a stranger can understand.",
@@ -144,7 +144,7 @@ const STAFF = {
     code: "Design",
     full: "Sébastien Le Prestre de Vauban",
     life: "1633–1707",
-    role: "Off the staff row. Design. The shape of a thing, then the change. The principal still publishes.",
+    role: "Special Staff. Design. The shape of a thing, then the change. The principal still publishes.",
     story: "He spent a career making and unmaking walls. A fortress was geometry and supply. He wrote that a place well sited is already half held. Design is the line before the fight.",
     duties: [
       "Keep the rules consistent.",
@@ -162,7 +162,7 @@ const STAFF = {
     code: "Continuity",
     full: "Polybius of Megalopolis",
     life: "c. 200–c. 118 BC",
-    role: "Off the staff row. Continuity. Keeps later books honest to the first. The principal still publishes.",
+    role: "Special Staff. Continuity. Keeps later books honest to the first. The principal still publishes.",
     story: "He wrote the Histories so a reader could see why Rome rose: mixed constitution, the accident, the habit. Continuity is that job. One book must still mean the same thing in the next.",
     duties: [
       "Cross-book alignment.",
@@ -173,6 +173,94 @@ const STAFF = {
     cadence: "On call with the work.",
     portrait: "portraits/polybius-imagine.jpg",
     alt: "Generated photoreal reimagining of Polybius of Megalopolis in a cloak. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
+  },
+  hattori: {
+    door: "Hattori",
+    code: "Certs",
+    full: "Hattori Hanzō",
+    life: "c. 1542–1596",
+    role: "Special Staff. Official free AI credentials. Reports to CoS. Not a J-seat.",
+    story: "He was Ieyasu's scout. The job was to see the path and bring the proof back, not to hold a line. Credentials are that kind of work: live badges, official issuers, nothing claimed that was not issued.",
+    duties: [
+      "Find live official free credentials.",
+      "Complete them when they are real.",
+      "Never claim a credential that is not issued.",
+      "Do not write the staff brief or a public branding draft."
+    ],
+    cadence: "On call with the work.",
+    portrait: "portraits/hattori-imagine.jpg",
+    alt: "Generated photoreal reimagining of Hattori Hanzō in a high-collar jacket. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
+  },
+  hopper: {
+    door: "Hopper",
+    code: "Learn",
+    full: "Grace Hopper",
+    life: "1906–1992",
+    role: "Special Staff. Official free Microsoft Learn. Reports to CoS. Not a J-seat.",
+    story: "She made compilers so a machine would take English instead of octal. COBOL came from that habit. Learn paths are the same idea: a course you can finish, not a title you buy.",
+    duties: [
+      "Complete official free Microsoft Learn paths.",
+      "Record issued trophies and modules only.",
+      "Do not sit a paid exam unless told.",
+      "Do not write the staff brief."
+    ],
+    cadence: "On call with the work.",
+    portrait: "portraits/hopper-imagine.jpg",
+    alt: "Generated photoreal reimagining of Grace Hopper in a high-collar jacket. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
+  },
+  faraday: {
+    door: "Faraday",
+    code: "Agents",
+    full: "Michael Faraday",
+    life: "1791–1867",
+    role: "Special Staff. Official free Hugging Face AI Agents Course. Reports to CoS. Not a J-seat.",
+    story: "He had almost no formal schooling. He learned in a bookbinder's shop, then in Davy's lab, then by experiment. Fields you can feel without a formula first. The agents course is that lab: build, measure, keep going.",
+    duties: [
+      "Complete the official Hugging Face AI Agents Course.",
+      "Keep issued units only.",
+      "Do not write the staff brief or a public branding draft."
+    ],
+    cadence: "On call with the work.",
+    portrait: "portraits/faraday-imagine.jpg",
+    alt: "Generated photoreal reimagining of Michael Faraday in a wet overcoat. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
+  },
+  lovelace: {
+    door: "Lovelace",
+    code: "LangChain",
+    full: "Ada Lovelace",
+    life: "1815–1852",
+    role: "Special Staff. Official free LangChain Academy. Reports to CoS. Not a J-seat.",
+    story: "She annotated Babbage's engine and wrote that a machine might compose, not only calculate, if you gave it the right notes. LangChain Academy is that kind of score: agents as composition, not magic.",
+    duties: [
+      "Complete official free LangChain Academy courses.",
+      "Keep issued certificates only.",
+      "Do not sit a paid exam unless told.",
+      "Do not write the staff brief."
+    ],
+    cadence: "On call with the work.",
+    portrait: "portraits/lovelace-imagine.jpg",
+    alt: "Generated photoreal reimagining of Ada Lovelace in a Victorian dress. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
+  },
+  galen: {
+    door: "Galen",
+    code: "Health",
+    full: "Galen of Pergamon",
+    life: "129–c. 216",
+    role: "Special Staff. Nutrition and exercise. Reports to CoS. Not a J-seat.",
+    story: "He treated gladiators in Pergamon and later the emperors in Rome. Diet and training were the same problem as a wound: keep the body able. This door is that seat. Not a physician of record.",
+    duties: [
+      "Nutrition and training questions.",
+      "Keep advice practical.",
+      "Do not write the staff brief or a public branding draft."
+    ],
+    cadence: "On call.",
+    portrait: "portraits/galen-imagine.jpg",
+    alt: "Generated photoreal reimagining of Galen of Pergamon in dark robes. Not a historical photograph.",
     caption: "Generated reimagining. Not a historical photograph."
   }
 };
@@ -187,10 +275,15 @@ const COMMONS_FALLBACK = {
   moltke: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Helmuth_von_Moltke_the_Elder_(by_Carl_G%C3%BCnther)_-_BNF_Gallica.jpg",
   fukuzawa: "https://commons.wikimedia.org/wiki/Special:FilePath/Fukuzawa_Yukichi.jpg",
   vauban: "https://commons.wikimedia.org/wiki/Special:FilePath/Vauban_picture.jpg",
-  polybius: "https://commons.wikimedia.org/wiki/Special:FilePath/Polybios_head.JPG"
+  polybius: "https://commons.wikimedia.org/wiki/Special:FilePath/Polybios_head.JPG",
+  hattori: "https://commons.wikimedia.org/wiki/Special:FilePath/Hattori_Hanzo.jpg",
+  hopper: "https://commons.wikimedia.org/wiki/Special:FilePath/Commodore_Grace_M._Hopper,_USN_(covered).jpg",
+  faraday: "https://commons.wikimedia.org/wiki/Special:FilePath/M_Faraday_Th_Phillips_oil_1842.jpg",
+  lovelace: "https://commons.wikimedia.org/wiki/Special:FilePath/Ada_Lovelace_portrait.jpg",
+  galen: "https://commons.wikimedia.org/wiki/Special:FilePath/Galenus.jpg"
 };
 
-const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "fukuzawa", "vauban", "polybius"];
+const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "fukuzawa", "vauban", "polybius", "hattori", "hopper", "faraday", "lovelace", "galen"];
 
 const shell = document.getElementById("shell");
 const panel = document.getElementById("panel");
