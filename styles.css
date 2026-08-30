@@ -277,9 +277,10 @@ body::before {
   z-index: 1;
   flex: 0 0 auto;
   flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(2, var(--node-w));
+  align-content: end;
+  justify-items: stretch;
   gap: 0.7rem;
   padding: 0.4rem 0 1rem 1.6rem;
   border-left: 1px dashed rgba(196, 164, 106, 0.38);
@@ -291,8 +292,9 @@ body::before {
 }
 
 .off-label {
+  grid-column: 1 / -1;
   margin: 0;
-  max-width: 7.6rem;
+  max-width: none;
   font-family: var(--mono);
   font-size: 0.6rem;
   font-weight: 400;
@@ -637,8 +639,10 @@ body::before {
     padding: 1rem 0 0;
     border-left: 0;
     border-top: 1px dashed rgba(196, 164, 106, 0.38);
-    align-items: center;
+    justify-content: center;
+    justify-items: center;
     width: min(100%, 40rem);
+    grid-template-columns: repeat(4, var(--node-w));
   }
 
   .off-label {
@@ -715,8 +719,13 @@ body::before {
     font-size: 0.98rem;
   }
 
+  .off-staff {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: min(22.5rem, 100%);
+  }
+
   .off-staff .node {
-    width: calc((min(22.5rem, 100%) - 0.8rem) / 3);
+    width: 100%;
   }
 
   .panel {
