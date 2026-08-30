@@ -16,6 +16,12 @@ The Story tab shows generated photoreal reimaginings. They are not historical ph
 | `fukuzawa-imagine.png` | Fukuzawa | Generated reimagining. Not a historical photograph. |
 | `vauban-imagine.jpg` | Vauban | Generated reimagining. Not a historical photograph. |
 | `polybius-imagine.jpg` | Polybius | Generated reimagining. Not a historical photograph. |
+| `hattori-imagine.jpg` | Hattori | Generated reimagining. Not a historical photograph. |
+| `hopper-imagine.jpg` | Hopper | Generated reimagining. Not a historical photograph. |
+| `faraday-imagine.jpg` | Faraday | Generated reimagining. Not a historical photograph. |
+| `lovelace-imagine.jpg` | Lovelace | Generated reimagining. Not a historical photograph. |
+| `galen-imagine.jpg` | Galen | Generated reimagining. Not a historical photograph. |
+| `tesler-imagine.jpg` | Tesler | Generated reimagining. Not a historical photograph. |
 
 ## Reference only (not shown on the live board)
 
@@ -94,3 +100,46 @@ Earlier Story sources from Wikimedia Commons. Kept here as references. The live 
 - Author: Photograph by Manfred Werner - Tsui. Sculpture: Alois Düll, “Polybios”, 1899 (gypsum model for the Austrian Parliament)
 - License: CC BY-SA 2.5
 - Who: Later imagining of Polybius of Megalopolis. No contemporary likeness survives.
+
+### hattori.jpg
+
+- Commons file: [File:Hattori Hanzo.jpg](https://commons.wikimedia.org/wiki/File:Hattori_Hanzo.jpg)
+- Author: Unknown
+- License: Public domain
+- Who: Hattori Hanzō (c. 1542–1596). Later portrait, 17th century. Not from life.
+
+### hopper.jpg
+
+- Commons file: [File:Commodore Grace M. Hopper, USN (covered).jpg](https://commons.wikimedia.org/wiki/File:Commodore_Grace_M._Hopper,_USN_(covered).jpg)
+- Author: James S. Davis
+- License: Public domain (U.S. Navy work)
+- Who: Grace Hopper (1906–1992). Official U.S. Navy portrait, 20 January 1984.
+
+### faraday.jpg
+
+- Commons file: [File:M Faraday Th Phillips oil 1842.jpg](https://commons.wikimedia.org/wiki/File:M_Faraday_Th_Phillips_oil_1842.jpg)
+- Author: Thomas Phillips (1770–1845)
+- License: Public domain
+- Who: Michael Faraday (1791–1867). Oil portrait, 1841–1842. NPG 269.
+
+### lovelace.jpg
+
+- Commons file: [File:Ada Lovelace portrait.jpg](https://commons.wikimedia.org/wiki/File:Ada_Lovelace_portrait.jpg)
+- Author: Alfred Edward Chalon (1780–1860)
+- License: Public domain
+- Who: Ada Lovelace (1815–1852). Watercolor portrait, circa 1840.
+
+### galen.jpg
+
+- Commons file: [File:Galenus.jpg](https://commons.wikimedia.org/wiki/File:Galenus.jpg)
+- Author: Georg Paul Busch (engraver)
+- License: Public domain
+- Source: The Lancet
+- Who: Later imagining of Galen of Pergamon. No contemporary likeness survives.
+
+### tesler.jpg
+
+- Commons file: [File:Larry Tesler Smiles at Whisper (cropped).jpeg](https://commons.wikimedia.org/wiki/File:Larry_Tesler_Smiles_at_Whisper_(cropped).jpeg)
+- Author: Yahoo! Blog, Sunnyvale, California. Cropped from File:Larry Tesler Smiles at Whisper.jpeg
+- License: CC BY 2.0
+- Who: Larry Tesler (1945–2020). Photograph, 23 July 2007.
