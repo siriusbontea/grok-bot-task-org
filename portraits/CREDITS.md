@@ -21,6 +21,7 @@ The Story tab shows generated photoreal reimaginings. They are not historical ph
 | `faraday-imagine.jpg` | Faraday | Generated reimagining. Not a historical photograph. |
 | `lovelace-imagine.jpg` | Lovelace | Generated reimagining. Not a historical photograph. |
 | `galen-imagine.jpg` | Galen | Generated reimagining. Not a historical photograph. |
+| `tesler-imagine.jpg` | Tesler | Generated reimagining. Not a historical photograph. |
 
 ## Reference only (not shown on the live board)
 
@@ -135,3 +136,10 @@ Earlier Story sources from Wikimedia Commons. Kept here as references. The live 
 - License: Public domain
 - Source: The Lancet
 - Who: Later imagining of Galen of Pergamon. No contemporary likeness survives.
+
+### tesler.jpg
+
+- Commons file: [File:Larry Tesler Smiles at Whisper (cropped).jpeg](https://commons.wikimedia.org/wiki/File:Larry_Tesler_Smiles_at_Whisper_(cropped).jpeg)
+- Author: Yahoo! Blog, Sunnyvale, California. Cropped from File:Larry Tesler Smiles at Whisper.jpeg
+- License: CC BY 2.0
+- Who: Larry Tesler (1945–2020). Photograph, 23 July 2007.

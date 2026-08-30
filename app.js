@@ -262,6 +262,24 @@ const STAFF = {
     portrait: "portraits/galen-imagine.jpg",
     alt: "Generated photoreal reimagining of Galen of Pergamon in dark robes. Not a historical photograph.",
     caption: "Generated reimagining. Not a historical photograph."
+  },
+  tesler: {
+    door: "Tesler",
+    code: "Swift",
+    full: "Larry Tesler",
+    life: "1945–2020",
+    role: "Special Staff. Official free Apple Swift tutorials. Reports to CoS. Not a J-seat.",
+    story: "He cut the modes out of the machine. Cut, copy, paste were how you moved text without switching worlds. Swift still carries that habit: one language, no ceremony. This door is that work. Tutorials you can finish. Nothing issued.",
+    duties: [
+      "Complete official free Apple Swift tutorials.",
+      "Develop in Swift, Swift Playground, Pathways, and free WWDC sessions.",
+      "Nothing is issued. Do not claim a credential.",
+      "Do not write the staff brief or a public branding draft."
+    ],
+    cadence: "On call with the work.",
+    portrait: "portraits/tesler-imagine.jpg",
+    alt: "Generated photoreal reimagining of Larry Tesler in a high-collar jacket. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   }
 };
 
@@ -280,10 +298,11 @@ const COMMONS_FALLBACK = {
   hopper: "https://commons.wikimedia.org/wiki/Special:FilePath/Commodore_Grace_M._Hopper,_USN_(covered).jpg",
   faraday: "https://commons.wikimedia.org/wiki/Special:FilePath/M_Faraday_Th_Phillips_oil_1842.jpg",
   lovelace: "https://commons.wikimedia.org/wiki/Special:FilePath/Ada_Lovelace_portrait.jpg",
-  galen: "https://commons.wikimedia.org/wiki/Special:FilePath/Galenus.jpg"
+  galen: "https://commons.wikimedia.org/wiki/Special:FilePath/Galenus.jpg",
+  tesler: "https://commons.wikimedia.org/wiki/Special:FilePath/Larry_Tesler_Smiles_at_Whisper_(cropped).jpeg"
 };
 
-const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "fukuzawa", "vauban", "polybius", "hattori", "hopper", "faraday", "lovelace", "galen"];
+const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "fukuzawa", "vauban", "polybius", "hattori", "hopper", "faraday", "lovelace", "galen", "tesler"];
 
 const shell = document.getElementById("shell");
 const panel = document.getElementById("panel");
