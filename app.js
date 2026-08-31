@@ -280,6 +280,24 @@ const STAFF = {
     portrait: "portraits/tesler-imagine.jpg",
     alt: "Generated photoreal reimagining of Larry Tesler in a high-collar jacket. Not a historical photograph.",
     caption: "Generated reimagining. Not a historical photograph."
+  },
+  licklider: {
+    door: "Licklider",
+    code: "AWS",
+    full: "J.C.R. Licklider",
+    life: "1915–1990",
+    role: "Special Staff. Official free AWS Skill Builder. Reports to CoS. Not a J-seat.",
+    story: "He wrote that people and machines should think together, not in turns. He called the mesh an Intergalactic Computer Network before the net had a name. This door is that habit: free cloud training you can finish. Nothing issued until the issuer says so.",
+    duties: [
+      "Complete official free AWS Skill Builder courses.",
+      "Record issued digital badges only.",
+      "Do not sit a paid exam unless told.",
+      "Do not write the staff brief or a public branding draft."
+    ],
+    cadence: "On call with the work.",
+    portrait: "portraits/licklider-imagine.jpg",
+    alt: "Generated photoreal reimagining of J.C.R. Licklider in a high-collar jacket. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   }
 };
 
@@ -299,10 +317,11 @@ const COMMONS_FALLBACK = {
   faraday: "https://commons.wikimedia.org/wiki/Special:FilePath/M_Faraday_Th_Phillips_oil_1842.jpg",
   lovelace: "https://commons.wikimedia.org/wiki/Special:FilePath/Ada_Lovelace_portrait.jpg",
   galen: "https://commons.wikimedia.org/wiki/Special:FilePath/Galenus.jpg",
-  tesler: "https://commons.wikimedia.org/wiki/Special:FilePath/Larry_Tesler_Smiles_at_Whisper_(cropped).jpeg"
+  tesler: "https://commons.wikimedia.org/wiki/Special:FilePath/Larry_Tesler_Smiles_at_Whisper_(cropped).jpeg",
+  licklider: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_J._C._R._Licklider.jpg"
 };
 
-const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "fukuzawa", "vauban", "polybius", "hattori", "hopper", "faraday", "lovelace", "galen", "tesler"];
+const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "fukuzawa", "vauban", "polybius", "hattori", "hopper", "faraday", "lovelace", "galen", "tesler", "licklider"];
 
 const shell = document.getElementById("shell");
 const panel = document.getElementById("panel");
