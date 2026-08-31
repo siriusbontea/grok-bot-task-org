@@ -22,6 +22,7 @@ The Story tab shows generated photoreal reimaginings. They are not historical ph
 | `lovelace-imagine.jpg` | Lovelace | Generated reimagining. Not a historical photograph. |
 | `galen-imagine.jpg` | Galen | Generated reimagining. Not a historical photograph. |
 | `tesler-imagine.jpg` | Tesler | Generated reimagining. Not a historical photograph. |
+| `licklider-imagine.jpg` | Licklider | Generated reimagining. Not a historical photograph. |
 
 ## Reference only (not shown on the live board)
 
@@ -143,3 +144,10 @@ Earlier Story sources from Wikimedia Commons. Kept here as references. The live 
 - Author: Yahoo! Blog, Sunnyvale, California. Cropped from File:Larry Tesler Smiles at Whisper.jpeg
 - License: CC BY 2.0
 - Who: Larry Tesler (1945–2020). Photograph, 23 July 2007.
+
+### licklider.jpg
+
+- Commons file: [File:Portrait of J. C. R. Licklider.jpg](https://commons.wikimedia.org/wiki/File:Portrait_of_J._C._R._Licklider.jpg)
+- Author: Unknown
+- License: Public domain (U.S. federal work / PD mark)
+- Who: J.C.R. Licklider (1915–1990), photograph circa 1963. Used as Commons fallback only; live board uses the imagine file.
