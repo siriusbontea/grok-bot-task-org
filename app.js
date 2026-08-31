@@ -180,12 +180,12 @@ const STAFF = {
     code: "Certs",
     full: "Hattori Hanzō",
     life: "c. 1542–1596",
-    role: "Special Staff. Official free AI credentials. Reports to CoS. Not a J-seat.",
-    story: "He was Ieyasu's scout. The job was to see the path and bring the proof back, not to hold a line. Credentials are that kind of work: live badges, official issuers, nothing claimed that was not issued.",
+    role: "Special Staff. Instructor. Official free IBM credentials. Reports to CoS. Not a J-seat.",
+    story: "He taught Ieyasu's men how to read a path, not how to hold a line. Official credentials are that lesson: live issuers, nothing claimed that was not issued.",
     duties: [
-      "Find live official free credentials.",
-      "Complete them when they are real.",
+      "Instruct on official free IBM credentials.",
       "Never claim a credential that is not issued.",
+      "Do not sit a paid exam unless told.",
       "Do not write the staff brief or a public branding draft."
     ],
     cadence: "On call with the work.",
@@ -198,13 +198,13 @@ const STAFF = {
     code: "Learn",
     full: "Grace Hopper",
     life: "1906–1992",
-    role: "Special Staff. Official free Microsoft Learn. Reports to CoS. Not a J-seat.",
-    story: "She made compilers so a machine would take English instead of octal. COBOL came from that habit. Learn paths are the same idea: a course you can finish, not a title you buy.",
+    role: "Special Staff. Instructor. Official free Microsoft Learn. Reports to CoS. Not a J-seat.",
+    story: "She taught a machine to take English instead of octal. COBOL came from that habit. This door tutors Microsoft Learn the same way: a path you can walk, not a title you buy.",
     duties: [
-      "Complete official free Microsoft Learn paths.",
+      "Instruct on official free Microsoft Learn paths.",
       "Record issued trophies and modules only.",
       "Do not sit a paid exam unless told.",
-      "Do not write the staff brief."
+      "Do not write the staff brief or a public branding draft."
     ],
     cadence: "On call with the work.",
     portrait: "portraits/hopper-imagine.jpg",
@@ -216,11 +216,12 @@ const STAFF = {
     code: "Agents",
     full: "Michael Faraday",
     life: "1791–1867",
-    role: "Special Staff. Official free Hugging Face AI Agents Course. Reports to CoS. Not a J-seat.",
-    story: "He had almost no formal schooling. He learned in a bookbinder's shop, then in Davy's lab, then by experiment. Fields you can feel without a formula first. The agents course is that lab: build, measure, keep going.",
+    role: "Special Staff. Instructor. Official free Hugging Face AI Agents Course. Reports to CoS. Not a J-seat.",
+    story: "He taught from the bench. Almost no formal schooling, then Davy's lab, then Christmas lectures you could feel without a formula first. This door tutors the agents course that way: build, measure, keep going.",
     duties: [
-      "Complete the official Hugging Face AI Agents Course.",
+      "Instruct on the official Hugging Face AI Agents Course.",
       "Keep issued units only.",
+      "Do not sit a paid exam unless told.",
       "Do not write the staff brief or a public branding draft."
     ],
     cadence: "On call with the work.",
@@ -233,13 +234,13 @@ const STAFF = {
     code: "LangChain",
     full: "Ada Lovelace",
     life: "1815–1852",
-    role: "Special Staff. Official free LangChain Academy. Reports to CoS. Not a J-seat.",
-    story: "She annotated Babbage's engine and wrote that a machine might compose, not only calculate, if you gave it the right notes. LangChain Academy is that kind of score: agents as composition, not magic.",
+    role: "Special Staff. Instructor. Official free LangChain Academy. Reports to CoS. Not a J-seat.",
+    story: "She taught that a machine might compose, not only calculate, if you gave it the right notes. The Notes on the Analytical Engine are that lesson. This door tutors LangChain Academy the same way: agents as composition, not magic.",
     duties: [
-      "Complete official free LangChain Academy courses.",
+      "Instruct on official free LangChain Academy courses.",
       "Keep issued certificates only.",
       "Do not sit a paid exam unless told.",
-      "Do not write the staff brief."
+      "Do not write the staff brief or a public branding draft."
     ],
     cadence: "On call with the work.",
     portrait: "portraits/lovelace-imagine.jpg",
@@ -268,11 +269,11 @@ const STAFF = {
     code: "Swift",
     full: "Larry Tesler",
     life: "1945–2020",
-    role: "Special Staff. Official free Apple Swift tutorials. Reports to CoS. Not a J-seat.",
-    story: "He cut the modes out of the machine. Cut, copy, paste were how you moved text without switching worlds. Swift still carries that habit: one language, no ceremony. This door is that work. Tutorials you can finish. Nothing issued.",
+    role: "Special Staff. Instructor. Official free Apple Swift tutorials. Reports to CoS. Not a J-seat.",
+    story: "He taught the machine to drop its modes. Cut, copy, paste were the lesson: move text without switching worlds. This door tutors official free Swift the same way: one language, no ceremony. Nothing issued.",
     duties: [
-      "Complete official free Apple Swift tutorials.",
-      "Develop in Swift, Swift Playground, Pathways, and free WWDC sessions.",
+      "Instruct on official free Apple Swift tutorials.",
+      "Tutor Swift, Swift Playground, Pathways, and free WWDC sessions.",
       "Nothing is issued. Do not claim a credential.",
       "Do not write the staff brief or a public branding draft."
     ],
@@ -286,10 +287,10 @@ const STAFF = {
     code: "AWS",
     full: "J.C.R. Licklider",
     life: "1915–1990",
-    role: "Special Staff. Official free AWS Skill Builder. Reports to CoS. Not a J-seat.",
-    story: "He wrote that people and machines should think together, not in turns. He called the mesh an Intergalactic Computer Network before the net had a name. This door is that habit: free cloud training you can finish. Nothing issued until the issuer says so.",
+    role: "Special Staff. Instructor. Official free AWS Skill Builder. Reports to CoS. Not a J-seat.",
+    story: "He taught that people and machines should think together, not in turns. He called the mesh an Intergalactic Computer Network before the net had a name. This door tutors that habit on free AWS Skill Builder. Nothing issued until the issuer says so.",
     duties: [
-      "Complete official free AWS Skill Builder courses.",
+      "Instruct on official free AWS Skill Builder courses.",
       "Record issued digital badges only.",
       "Do not sit a paid exam unless told.",
       "Do not write the staff brief or a public branding draft."
