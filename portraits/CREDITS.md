@@ -23,6 +23,7 @@ The Story tab shows generated photoreal reimaginings. They are not historical ph
 | `galen-imagine.jpg` | Galen | Generated reimagining. Not a historical photograph. |
 | `tesler-imagine.jpg` | Tesler | Generated reimagining. Not a historical photograph. |
 | `licklider-imagine.jpg` | Licklider | Generated reimagining. Not a historical photograph. |
+| `colbert-imagine.jpg` | Colbert | Temporary solid-color placeholder (board ink `#14110e`). Not a likeness. Replace with a generated photoreal reimagining in the same style as the other `*-imagine.jpg` files. |
 
 ## Reference only (not shown on the live board)
 
