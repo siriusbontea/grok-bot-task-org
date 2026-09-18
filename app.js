@@ -121,6 +121,24 @@ const STAFF = {
     alt: "Generated photoreal reimagining of Helmuth von Moltke the Elder in uniform. Not a historical photograph.",
     caption: "Generated reimagining. Not a historical photograph."
   },
+  colbert: {
+    door: "Colbert",
+    code: "J8",
+    full: "Jean-Baptiste Colbert",
+    life: "1619–1683",
+    role: "Resource. Travel and expense draft packs. Does not submit. Work theater only.",
+    story: "He ran the finances of a state that lived by ledgers. Colbert rebuilt revenue, cut waste, and made the books the instrument of policy. Resource is the count before the claim.",
+    duties: [
+      "Draft travel and expense packages when asked.",
+      "Flag exceptions before the principal submits.",
+      "Never invent a charge, a rate, or a receipt.",
+      "Never submit, book, or spend."
+    ],
+    cadence: "On call with the trip.",
+    portrait: "portraits/colbert-imagine.jpg",
+    alt: "Generated photoreal reimagining of Jean-Baptiste Colbert in a high-collar coat. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
+  },
   fukuzawa: {
     door: "Fukuzawa",
     code: "Career",
@@ -322,7 +340,7 @@ const COMMONS_FALLBACK = {
   licklider: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_J._C._R._Licklider.jpg"
 };
 
-const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "fukuzawa", "vauban", "polybius", "hattori", "hopper", "faraday", "lovelace", "galen", "tesler", "licklider"];
+const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "colbert", "fukuzawa", "vauban", "polybius", "hattori", "hopper", "faraday", "lovelace", "galen", "tesler", "licklider"];
 
 const shell = document.getElementById("shell");
 const panel = document.getElementById("panel");
@@ -465,7 +483,7 @@ function drawLines() {
   const ns = "http://www.w3.org/2000/svg";
   const carl = $("n-carl");
   const cordoba = $("n-cordoba");
-  const jIds = ["n-cato", "n-jomini", "n-rommel", "n-xenophon", "n-moltke"];
+  const jIds = ["n-cato", "n-jomini", "n-rommel", "n-xenophon", "n-moltke", "n-colbert"];
   const jNodes = jIds.map((id) => $(id)).filter(Boolean);
   if (!carl || !cordoba || jNodes.length < 2) return;
 
