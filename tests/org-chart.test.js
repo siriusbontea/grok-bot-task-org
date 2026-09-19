@@ -90,6 +90,35 @@ test("theater headers are non-interactive labels", () => {
   });
 });
 
+test("chips show each STAFF full name and seat code", () => {
+  const { STAFF, chipCaption } = require("../app.js");
+  assert.equal(chipCaption(STAFF.carl).name, "Carl von Clausewitz");
+  assert.equal(chipCaption(STAFF.carl).code, "CoS");
+  assert.equal(
+    chipCaption(STAFF.cordoba).name,
+    "Gonzalo Fernández de Córdoba, El Gran Capitán"
+  );
+  assert.equal(
+    chipCaption(STAFF.cato).name,
+    "Marcus Porcius Cato the Elder, the Censor"
+  );
+  Object.values(STAFF).forEach((person) => {
+    const cap = chipCaption(person);
+    assert.equal(cap.name, person.full);
+    assert.equal(cap.code, person.code);
+    assert.notEqual(cap.name, person.door);
+  });
+  const js = read("app.js");
+  assert.match(js, /hydrateChipLabels/);
+  assert.match(js, /\.node-name[\s\S]{0,80}cap\.name|textContent = cap\.name/);
+});
+
+test("chip names wrap on at most two lines", () => {
+  const css = read("styles.css");
+  assert.match(css, /line-clamp:\s*2/);
+  assert.match(css, /\.node-name/);
+});
+
 test("chips include circular portrait slots", () => {
   const html = read("index.html");
   const faces = capture(html, /<img([^>]*class="chip-face"[^>]*)>/g);
