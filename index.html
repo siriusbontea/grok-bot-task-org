@@ -29,90 +29,154 @@
           <svg class="lines" id="lines" aria-hidden="true"></svg>
 
           <div class="tier tier-cos">
-            <button class="node" type="button" data-id="carl" id="n-carl" aria-expanded="false" aria-controls="panel">
-              <span class="node-name">Carl</span>
-              <span class="node-code">CoS</span>
+            <button class="node chip chip-wide" type="button" data-id="carl" id="n-carl" aria-expanded="false" aria-controls="panel">
+              <img class="chip-face" alt="" width="64" height="64">
+              <span class="chip-copy">
+                <span class="node-name">Carl</span>
+                <span class="node-code">CoS</span>
+              </span>
             </button>
           </div>
 
-          <div class="tier tier-dcos">
-            <button class="node node-deputy" type="button" data-id="cordoba" id="n-cordoba" aria-expanded="false" aria-controls="panel">
-              <span class="node-name">Córdoba</span>
-              <span class="node-code">DCoS</span>
-            </button>
-          </div>
+          <div class="theaters" id="theaters">
+            <section class="theater" data-theater="command" aria-labelledby="th-command">
+              <p class="theater-label" id="th-command">Command</p>
+              <div class="theater-people">
+                <button class="node chip" type="button" data-id="cordoba" id="n-cordoba" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Córdoba</span>
+                    <span class="node-code">DCoS</span>
+                  </span>
+                </button>
+              </div>
+            </section>
 
-          <div class="tier tier-j" id="tier-j">
-            <button class="node" type="button" data-id="cato" id="n-cato" aria-expanded="false" aria-controls="panel">
-              <span class="node-name">Cato</span>
-              <span class="node-code">J1</span>
-            </button>
-            <button class="node" type="button" data-id="jomini" id="n-jomini" aria-expanded="false" aria-controls="panel">
-              <span class="node-name">Jomini</span>
-              <span class="node-code">J2</span>
-            </button>
-            <button class="node" type="button" data-id="rommel" id="n-rommel" aria-expanded="false" aria-controls="panel">
-              <span class="node-name">Rommel</span>
-              <span class="node-code">J3</span>
-            </button>
-            <button class="node" type="button" data-id="xenophon" id="n-xenophon" aria-expanded="false" aria-controls="panel">
-              <span class="node-name">Xenophon</span>
-              <span class="node-code">J4</span>
-            </button>
-            <button class="node" type="button" data-id="moltke" id="n-moltke" aria-expanded="false" aria-controls="panel">
-              <span class="node-name">Moltke</span>
-              <span class="node-code">J5</span>
-            </button>
-            <button class="node" type="button" data-id="colbert" id="n-colbert" aria-expanded="false" aria-controls="panel">
-              <span class="node-name">Colbert</span>
-              <span class="node-code">J8</span>
-            </button>
+            <section class="theater" data-theater="primary" aria-labelledby="th-primary">
+              <p class="theater-label" id="th-primary">Primary Staff</p>
+              <div class="theater-people">
+                <button class="node chip" type="button" data-id="cato" id="n-cato" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Cato</span>
+                    <span class="node-code">J1</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="jomini" id="n-jomini" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Jomini</span>
+                    <span class="node-code">J2</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="rommel" id="n-rommel" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Rommel</span>
+                    <span class="node-code">J3</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="xenophon" id="n-xenophon" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Xenophon</span>
+                    <span class="node-code">J4</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="moltke" id="n-moltke" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Moltke</span>
+                    <span class="node-code">J5</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="colbert" id="n-colbert" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Colbert</span>
+                    <span class="node-code">J8</span>
+                  </span>
+                </button>
+              </div>
+            </section>
+
+            <section class="theater" data-theater="special" aria-labelledby="th-special">
+              <p class="theater-label" id="th-special">Special Staff</p>
+              <div class="theater-people">
+                <button class="node chip" type="button" data-id="fukuzawa" id="n-fukuzawa" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Fukuzawa</span>
+                    <span class="node-code">Career</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="vauban" id="n-vauban" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Vauban</span>
+                    <span class="node-code">Design</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="polybius" id="n-polybius" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Polybius</span>
+                    <span class="node-code">Continuity</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="hattori" id="n-hattori" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Hattori</span>
+                    <span class="node-code">Certs</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="hopper" id="n-hopper" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Hopper</span>
+                    <span class="node-code">Learn</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="faraday" id="n-faraday" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Faraday</span>
+                    <span class="node-code">Agents</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="lovelace" id="n-lovelace" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Lovelace</span>
+                    <span class="node-code">LangChain</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="galen" id="n-galen" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Galen</span>
+                    <span class="node-code">Health</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="tesler" id="n-tesler" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Tesler</span>
+                    <span class="node-code">Swift</span>
+                  </span>
+                </button>
+                <button class="node chip" type="button" data-id="licklider" id="n-licklider" aria-expanded="false" aria-controls="panel">
+                  <img class="chip-face" alt="" width="56" height="56">
+                  <span class="chip-copy">
+                    <span class="node-name">Licklider</span>
+                    <span class="node-code">AWS</span>
+                  </span>
+                </button>
+              </div>
+            </section>
           </div>
         </div>
-
-        <aside class="off-staff" id="off-staff">
-          <p class="off-label">Special Staff</p>
-          <button class="node" type="button" data-id="fukuzawa" id="n-fukuzawa" aria-expanded="false" aria-controls="panel">
-            <span class="node-name">Fukuzawa</span>
-            <span class="node-code">Career</span>
-          </button>
-          <button class="node" type="button" data-id="vauban" id="n-vauban" aria-expanded="false" aria-controls="panel">
-            <span class="node-name">Vauban</span>
-            <span class="node-code">Design</span>
-          </button>
-          <button class="node" type="button" data-id="polybius" id="n-polybius" aria-expanded="false" aria-controls="panel">
-            <span class="node-name">Polybius</span>
-            <span class="node-code">Continuity</span>
-          </button>
-          <button class="node" type="button" data-id="hattori" id="n-hattori" aria-expanded="false" aria-controls="panel">
-            <span class="node-name">Hattori</span>
-            <span class="node-code">Certs</span>
-          </button>
-          <button class="node" type="button" data-id="hopper" id="n-hopper" aria-expanded="false" aria-controls="panel">
-            <span class="node-name">Hopper</span>
-            <span class="node-code">Learn</span>
-          </button>
-          <button class="node" type="button" data-id="faraday" id="n-faraday" aria-expanded="false" aria-controls="panel">
-            <span class="node-name">Faraday</span>
-            <span class="node-code">Agents</span>
-          </button>
-          <button class="node" type="button" data-id="lovelace" id="n-lovelace" aria-expanded="false" aria-controls="panel">
-            <span class="node-name">Lovelace</span>
-            <span class="node-code">LangChain</span>
-          </button>
-          <button class="node" type="button" data-id="galen" id="n-galen" aria-expanded="false" aria-controls="panel">
-            <span class="node-name">Galen</span>
-            <span class="node-code">Health</span>
-          </button>
-          <button class="node" type="button" data-id="tesler" id="n-tesler" aria-expanded="false" aria-controls="panel">
-            <span class="node-name">Tesler</span>
-            <span class="node-code">Swift</span>
-          </button>
-          <button class="node" type="button" data-id="licklider" id="n-licklider" aria-expanded="false" aria-controls="panel">
-            <span class="node-name">Licklider</span>
-            <span class="node-code">AWS</span>
-          </button>
-        </aside>
       </div>
     </main>
 
