@@ -503,8 +503,9 @@ if (typeof document !== "undefined") {
       const id = node && node.dataset.id;
       const p = STAFF[id];
       if (!id || !p) return;
-      bindPortrait(img, id, p.alt);
       img.addEventListener("load", scheduleLines);
+      bindPortrait(img, id, "");
+      if (img.complete) scheduleLines();
     });
   }
 

@@ -3,7 +3,7 @@ ortrait credits
 
 ## Live Story images
 
-The Story tab shows generated photoreal reimaginings. They are not historical photographs. Doors on the board stay name and seat; these faces are not on the tiles.
+The Story tab and the org-chart chips show generated photoreal reimaginings. They are not historical photographs.
 
 | File | Door | Credit |
 | --- | --- | --- |

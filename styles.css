@@ -188,7 +188,7 @@ body::before {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(8.25rem, 0.85fr) minmax(17rem, 1.55fr) minmax(17rem, 1.75fr);
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.55fr) minmax(0, 1.75fr);
   align-items: start;
   gap: 1.35rem 1.15rem;
   width: 100%;
@@ -291,8 +291,9 @@ body::before {
 .chip-wide {
   flex-direction: row;
   align-items: center;
-  width: min(20.5rem, 100%);
-  padding: 0.72rem 1.05rem 0.72rem 0.75rem;
+  width: max-content;
+  max-width: 100%;
+  padding: 0.72rem 1.15rem 0.72rem 0.75rem;
   gap: 0.85rem;
   text-align: left;
 }
@@ -605,9 +606,23 @@ body::before {
     --chip-gap: 0.4rem;
   }
 
-  .theaters {
-    grid-template-columns: minmax(7.5rem, 0.8fr) minmax(14rem, 1.5fr) minmax(14rem, 1.7fr);
+  .theaters,
+  .shell.is-open .theaters {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.5fr) minmax(0, 1.7fr);
     gap: 1.15rem 0.75rem;
+  }
+
+  .shell.is-open .theaters {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.35rem;
+  }
+
+  .shell.is-open .theater-people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .node {
@@ -692,7 +707,8 @@ body::before {
   }
 
   .chip-wide {
-    width: min(22rem, 100%);
+    width: max-content;
+    max-width: 100%;
   }
 
   .node-name {

@@ -94,6 +94,10 @@ test("chips include circular portrait slots", () => {
   const html = read("index.html");
   const faces = capture(html, /<img([^>]*class="chip-face"[^>]*)>/g);
   assert.equal(faces.length, 1 + COMMAND.length + PRIMARY.length + SPECIAL.length);
+  faces.forEach((attrs) => {
+    assert.match(attrs, /alt=""/);
+  });
+  assert.match(read("app.js"), /bindPortrait\(img, id, ""\)/);
 });
 
 test("public copy stays sanitized", () => {
