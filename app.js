@@ -349,6 +349,14 @@ const THEATER_PEOPLE = {
   special: ["n-fukuzawa", "n-vauban", "n-polybius", "n-hattori", "n-hopper", "n-faraday", "n-lovelace", "n-galen", "n-tesler", "n-licklider"]
 };
 
+function chipCaption(person) {
+  const p = person || {};
+  return {
+    name: p.full || p.door || "",
+    code: p.code || ""
+  };
+}
+
 function portraitSources(id, staff, commons) {
   const book = staff || STAFF;
   const fallback = commons || COMMONS_FALLBACK;
@@ -497,6 +505,18 @@ if (typeof document !== "undefined") {
     bindPortrait($("panel-portrait"), id, p.alt);
   }
 
+  function hydrateChipLabels() {
+    document.querySelectorAll(".node[data-id]").forEach((node) => {
+      const p = STAFF[node.dataset.id];
+      if (!p) return;
+      const cap = chipCaption(p);
+      const nameEl = node.querySelector(".node-name");
+      const codeEl = node.querySelector(".node-code");
+      if (nameEl) nameEl.textContent = cap.name;
+      if (codeEl) codeEl.textContent = cap.code;
+    });
+  }
+
   function hydrateChipPortraits() {
     document.querySelectorAll(".node[data-id] .chip-face").forEach((img) => {
       const node = img.closest(".node");
@@ -600,6 +620,7 @@ if (typeof document !== "undefined") {
   }
 
   function hydrateAndBind() {
+    hydrateChipLabels();
     hydrateChipPortraits();
 
     document.querySelectorAll(".node").forEach((btn) => {
@@ -694,6 +715,7 @@ if (typeof module !== "undefined" && module.exports) {
     THEATER_HEADERS,
     THEATER_PEOPLE,
     portraitSources,
+    chipCaption,
     rowGroups,
     buildTreePaths
   };
