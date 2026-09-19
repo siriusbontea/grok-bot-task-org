@@ -2,13 +2,13 @@
 
 **Date:** 2026-09-19  
 **Repo:** siriusbontea/grok-bot-task-org (GitHub Pages)  
-**Status:** Awaiting owner review before implementation
+**Status:** Approved for build (Primary Staff rename)
 
 ## Goal
 Revise the public Staff org chart to a Giggling-Platypus-style hierarchical chip tree under Carl, with three theater columns, dark/gold embossed chips (shadow + highlight), cyborg portraits on chips, and click-to-open dossiers. Prefer an **SVG connector diagram** for the tree lines (the site already uses `#lines` SVG; extend that model rather than switching to CSS-only connectors).
 
 ## Locked decisions
-- Group under Carl into **three theaters:** Command (DCoS), Operations (J1–J8 doors that exist), Special Staff.
+- Group under Carl into **three theaters:** Command (DCoS), **Primary Staff** (J1–J8 doors that exist), Special Staff. (Do **not** label the middle theater “Operations.”)
 - Person chips keep **cyborg portraits** and **click-to-open dossiers**.
 - Visual theme: existing dark/gold palette; chips look high-end via emboss (inner light edge + drop shadow). Soft gold SVG strokes for hierarchy.
 - Public sanitize unchanged: no CostPoint, VELEN internals, JETT/SAM, Outlook, quiet job hunt, or staff callsigns beyond door names + seat codes.
@@ -16,10 +16,10 @@ Revise the public Staff org chart to a Giggling-Platypus-style hierarchical chip
 ## Hierarchy (desktop)
 1. **Carl** — single wide CoS chip (portrait + Carl / CoS).
 2. SVG spine down to a horizontal bar.
-3. Three **theater header chips** (gold-tinted labels, not people): Command · Operations · Special Staff.
+3. Three **theater header chips** (gold-tinted labels, not people): Command · Primary Staff · Special Staff.
 4. Under each header, person chips:
    - **Command:** Córdoba (DCoS)
-   - **Operations:** Cato J1, Jomini J2, Rommel J3, Xenophon J4, Moltke J5, Colbert J8 (no J6/J7 doors)
+   - **Primary Staff:** Cato J1, Jomini J2, Rommel J3, Xenophon J4, Moltke J5, Colbert J8 (no J6/J7 doors)
    - **Special Staff:** Fukuzawa Career, Vauban Design, Polybius Continuity, Hattori Certs, Hopper Learn, Faraday Agents, Lovelace LangChain, Galen Health, Tesler Swift, Licklider AWS
 
 ## Chip anatomy
@@ -48,10 +48,11 @@ Revise the public Staff org chart to a Giggling-Platypus-style hierarchical chip
 
 ## Success criteria
 - Live Pages chart shows three theaters under Carl with embossed portrait chips.
+- Middle theater label is **Primary Staff** (not Operations).
 - SVG connectors read as a deliberate tree (not a flat door grid).
 - Clicking a person still opens the existing dossier content.
 - Usable at ~390px, tablet, and desktop without horizontal scroll.
 - Public sanitize still holds.
 
 ## Implementation note
-Prefer editing `index.html` / `styles.css` / `app.js` in place on `main` via PR (or direct merge per owner preference). STAFF data model in `app.js` stays the source of truth; chart markup is reorganized around theater groups.
+Prefer editing `index.html` / `styles.css` / `app.js` in place via PR. STAFF data model in `app.js` stays the source of truth; chart markup is reorganized around theater groups.
