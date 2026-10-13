@@ -153,3 +153,11 @@ Earlier Story sources from Wikimedia Commons. Kept here as references. The live 
 - Author: Unknown
 - License: Public domain (U.S. federal work / PD mark)
 - Who: J.C.R. Licklider (1915–1990), photograph circa 1963. Used as Commons fallback only; live board uses the imagine file.
+
+
+## mezzofanti
+
+- File: none local (Commons fallback only)
+- Commons: https://commons.wikimedia.org/wiki/File:Giuseppe_Mezzofanti.jpg
+- License: Public domain (19th-century portrait; confirm tag on the Commons page)
+- Who: Giuseppe Mezzofanti (1774–1849). No generated reimagining yet.
