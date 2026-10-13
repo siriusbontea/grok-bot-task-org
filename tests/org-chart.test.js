@@ -25,7 +25,8 @@ const SPECIAL = [
   "lovelace",
   "galen",
   "tesler",
-  "licklider"
+  "licklider",
+  "mezzofanti"
 ];
 
 function theaterChunk(html, theater) {
