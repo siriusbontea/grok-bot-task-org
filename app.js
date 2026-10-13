@@ -332,9 +332,9 @@ const STAFF = {
       "Do not write the staff brief or a public branding draft."
     ],
     cadence: "On call with the work.",
-    portrait: "",
-    alt: "Portrait of Giuseppe Mezzofanti from Wikimedia Commons.",
-    caption: "Historical portrait via Wikimedia Commons."
+    portrait: "portraits/mezzofanti-imagine.jpg",
+    alt: "Generated photoreal reimagining of Giuseppe Mezzofanti in a red cardinal's hat and cape. Not a historical photograph.",
+    caption: "Generated reimagining. Not a historical photograph."
   }
 };
 
@@ -355,8 +355,7 @@ const COMMONS_FALLBACK = {
   lovelace: "https://commons.wikimedia.org/wiki/Special:FilePath/Ada_Lovelace_portrait.jpg",
   galen: "https://commons.wikimedia.org/wiki/Special:FilePath/Galenus.jpg",
   tesler: "https://commons.wikimedia.org/wiki/Special:FilePath/Larry_Tesler_Smiles_at_Whisper_(cropped).jpeg",
-  licklider: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_J._C._R._Licklider.jpg",
-  mezzofanti: "https://commons.wikimedia.org/wiki/Special:FilePath/Giuseppe_Mezzofanti.jpg"
+  licklider: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_J._C._R._Licklider.jpg"
 };
 
 const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "colbert", "fukuzawa", "vauban", "polybius", "hattori", "hopper", "faraday", "lovelace", "galen", "tesler", "licklider", "mezzofanti"];
