@@ -317,6 +317,24 @@ const STAFF = {
     portrait: "portraits/licklider-imagine.jpg",
     alt: "Generated photoreal reimagining of J.C.R. Licklider in a high-collar jacket. Not a historical photograph.",
     caption: "Generated reimagining. Not a historical photograph."
+  },
+  mezzofanti: {
+    door: "Mezzofanti",
+    code: "Languages",
+    full: "Giuseppe Mezzofanti",
+    life: "1774–1849",
+    role: "Special Staff. Tutor first and foremost. Languages, spoken and invented. Reports to CoS. Not a J-seat.",
+    story: "A carpenter's son in Bologna who became a cardinal and was said to speak dozens of languages. He learned them by sitting with travelers, soldiers, and prisoners and talking until he could answer back. This door tutors the same way: daily practice, real sentences, patient correction.",
+    duties: [
+      "Tutor languages through conversation, drills, and review.",
+      "Build word lists and grammar notes for invented tongues when asked.",
+      "Report progress honestly. Never claim a level that was not reached.",
+      "Do not write the staff brief or a public branding draft."
+    ],
+    cadence: "On call with the work.",
+    portrait: "",
+    alt: "Portrait of Giuseppe Mezzofanti from Wikimedia Commons.",
+    caption: "Historical portrait via Wikimedia Commons."
   }
 };
 
@@ -337,16 +355,17 @@ const COMMONS_FALLBACK = {
   lovelace: "https://commons.wikimedia.org/wiki/Special:FilePath/Ada_Lovelace_portrait.jpg",
   galen: "https://commons.wikimedia.org/wiki/Special:FilePath/Galenus.jpg",
   tesler: "https://commons.wikimedia.org/wiki/Special:FilePath/Larry_Tesler_Smiles_at_Whisper_(cropped).jpeg",
-  licklider: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_J._C._R._Licklider.jpg"
+  licklider: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_J._C._R._Licklider.jpg",
+  mezzofanti: "https://commons.wikimedia.org/wiki/Special:FilePath/Giuseppe_Mezzofanti.jpg"
 };
 
-const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "colbert", "fukuzawa", "vauban", "polybius", "hattori", "hopper", "faraday", "lovelace", "galen", "tesler", "licklider"];
+const ORDER = ["carl", "cordoba", "cato", "jomini", "rommel", "xenophon", "moltke", "colbert", "fukuzawa", "vauban", "polybius", "hattori", "hopper", "faraday", "lovelace", "galen", "tesler", "licklider", "mezzofanti"];
 
 const THEATER_HEADERS = ["th-command", "th-primary", "th-special"];
 const THEATER_PEOPLE = {
   command: ["n-cordoba"],
   primary: ["n-cato", "n-jomini", "n-rommel", "n-xenophon", "n-moltke", "n-colbert"],
-  special: ["n-fukuzawa", "n-vauban", "n-polybius", "n-hattori", "n-hopper", "n-faraday", "n-lovelace", "n-galen", "n-tesler", "n-licklider"]
+  special: ["n-fukuzawa", "n-vauban", "n-polybius", "n-hattori", "n-hopper", "n-faraday", "n-lovelace", "n-galen", "n-tesler", "n-licklider", "n-mezzofanti"]
 };
 
 function chipCaption(person) {
