@@ -333,7 +333,7 @@ const STAFF = {
     ],
     cadence: "On call with the work.",
     portrait: "portraits/mezzofanti-imagine.jpg",
-    alt: "Generated photoreal reimagining of Giuseppe Mezzofanti in a red cardinal's hat and cape. Not a historical photograph.",
+    alt: "Generated photoreal reimagining of Giuseppe Mezzofanti in a wide-brimmed red cardinal's hat and scarlet cape. Not a historical photograph.",
     caption: "Generated reimagining. Not a historical photograph."
   }
 };
