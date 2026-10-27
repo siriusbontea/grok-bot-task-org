@@ -320,7 +320,7 @@ const STAFF = {
   },
   mezzofanti: {
     door: "Mezzofanti",
-    code: "Languages",
+    code: "Hyperpolyglot",
     full: "Giuseppe Mezzofanti",
     life: "1774–1849",
     role: "Special Staff. Tutor first and foremost. Languages, spoken and invented. Reports to CoS. Not a J-seat.",
